@@ -1,9 +1,9 @@
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/mouse.h>
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     combos {
@@ -118,12 +118,12 @@
             label = "Lower";
             display-name = "Lower";
             bindings = <
-&kp F1  &kp F2                        &kp F3          &kp F4          &kp F5           &kp F6                      &kp F7           &kp F8  &kp F9  &kp F10  &kp F11                 &kp F12
-&trans  &mt LEFT_CONTROL PAUSE_BREAK  &kp HOME        &kp UP_ARROW    &kp END          &trans                      &kp PAGE_UP      &kp N7  &kp N8  &kp N9   &mt LEFT_CONTROL SLASH  &trans
-&trans  &trans                        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &mt LEFT_ALT RIGHT_SHIFT    &kp PAGE_DOWN    &kp N4  &kp N5  &kp N6   &kp LC(LA(E))           &trans
-&trans  &trans                        &kp LC(LEFT)    &kp CAPSLOCK    &kp LC(RIGHT)    &kp DELETE                  &kp PRINTSCREEN  &kp N1  &kp N2  &kp N3   &trans                  &trans
-                                                      &trans          &trans           &trans                      &trans           &mo 3
-                                                                      &trans           &trans                      &trans
+&kp F1  &kp F2               &kp F3          &kp F4          &kp F5           &kp F6                 &kp F7           &kp F8  &kp F9  &kp F10  &kp F11        &kp F12
+&trans  &kp LC(PAUSE_BREAK)  &kp HOME        &kp UP_ARROW    &kp END          &trans                 &kp PAGE_UP      &kp N7  &kp N8  &kp N9   &kp LC(SLASH)  &trans
+&trans  &trans               &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LA(RIGHT_SHIFT)    &kp PAGE_DOWN    &kp N4  &kp N5  &kp N6   &kp LC(LA(E))  &trans
+&trans  &trans               &kp LC(LEFT)    &kp CAPSLOCK    &kp LC(RIGHT)    &kp DELETE             &kp PRINTSCREEN  &kp N1  &kp N2  &kp N3   &trans         &trans
+                                             &trans          &trans           &trans                 &trans           &mo 3
+                                                             &trans           &trans                 &trans
             >;
         };
 
