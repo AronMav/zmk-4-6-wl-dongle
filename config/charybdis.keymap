@@ -102,8 +102,7 @@
         DogSymbol: DogSymbol {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LEFT_ALT>, <&macro_press>, <&kt N6 &kp N4>;
-
+            bindings = <&kt LEFT_ALT &kp N6 &kp N4 &kt LEFT_ALT>;
             label = "DOGSYMBOL";
         };
     };
