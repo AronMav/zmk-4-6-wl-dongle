@@ -101,9 +101,10 @@
     macros {
         DogSymbol: DogSymbol {
             compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+            wait-ms = <40>;
+			tap-ms = <40>;
             bindings = <&macro_press   &kp LALT>
-					, <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N6 &kp KP_N3>
+					, <&macro_tap     &kp KP_N6 &kp KP_N4>
 					, <&macro_release &kp LALT>
 					;
             label = "DOGSYMBOL";
