@@ -102,8 +102,8 @@
         DogSymbol: DogSymbol {
             compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
-            wait-ms = <40>;
-			tap-ms = <40>;
+            wait-ms = <10>;
+			tap-ms = <10>;
             bindings = <&macro_press   &kp LALT>
 					, <&macro_tap     &kp KP_N6 &kp KP_N4>
 					, <&macro_release &kp LALT>
