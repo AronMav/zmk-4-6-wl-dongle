@@ -110,6 +110,30 @@
 					;
             label = "DOGSYMBOL";
         };
+		
+		Dot: Dot {
+            compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+            wait-ms = <10>;
+			tap-ms = <10>;
+            bindings = <&macro_press   &kp LALT>
+					, <&macro_tap     &kp KP_N4 &kp KP_N6>
+					, <&macro_release &kp LALT>
+					;
+            label = "Dot";
+        };
+		
+		Comma: Comma {
+            compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+            wait-ms = <10>;
+			tap-ms = <10>;
+            bindings = <&macro_press   &kp LALT>
+					, <&macro_tap     &kp KP_N4 &kp KP_N4>
+					, <&macro_release &kp LALT>
+					;
+            label = "Comma";
+        };
     };
 
     keymap {
@@ -145,10 +169,10 @@
             label = "Raise";
             display-name = "Raise";
             bindings = <
-&trans  &trans        &trans       &DogSymbol  &trans    &trans       &bootloader  &sys_reset  &trans           &trans    &trans    &trans
-&trans  &trans        &trans       &kp HASH    &kp DLLR  &kp PRCNT    &kp CARET    &kp AMPS    &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp DEL
-&trans  &bt BT_CLR    &bt BT_PRV   &bt BT_NXT  &trans    &to 3        &kp UNDER    &kp EQUAL   &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
-&trans  &out OUT_TOG  &bootloader  &trans      &trans    &trans       &kp MINUS    &kp PLUS    &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
+&trans  &trans        &trans       &DogSymbol  &trans    &trans       &trans  	   &trans      &trans      &trans    &trans    &trans
+&trans  &trans        &trans       &trans      &trans  	 &trans    	  &trans       &trans      &trans      &trans    &trans    &trans
+&trans  &trans        &trans       &trans      &trans    &trans       &trans       &trans      &trans      &Dot      &Comma    &trans
+&trans  &trans        &trans       &trans      &trans    &trans       &trans       &trans      &trans      &trans    &trans    &trans
                                    &trans      &trans    &trans       &trans       &trans
                                                &mo 3     &trans       &trans
             >;
