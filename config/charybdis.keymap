@@ -99,18 +99,43 @@
     };
 
     macros {
-        DogSymbol: DogSymbol {
+	
+		ControlAltY: ControlAltY {
+            compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+            wait-ms = <10>;
+			tap-ms = <10>;
+            bindings = <&macro_press   &kp LEFT_CONTROL &kp LALT>
+					, <&macro_tap      &kp E>
+					, <&macro_release  &kp LEFT_CONTROL &kp LALT>
+					;
+            label = "ControlAltY";
+        };
+		
+		ControlBackslash: ControlBackslash {
+            compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+            wait-ms = <10>;
+			tap-ms = <10>;
+            bindings = <&macro_press   &kp LEFT_CONTROL>
+					, <&macro_tap      &kp BACKSLASH>
+					, <&macro_release  &kp LEFT_CONTROL>
+					;
+            label = "ControlBackslash";
+        };
+	
+		Comma: Comma {
             compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
             wait-ms = <10>;
 			tap-ms = <10>;
             bindings = <&macro_press   &kp LALT>
-					, <&macro_tap     &kp KP_N6 &kp KP_N4>
+					, <&macro_tap     &kp KP_N4 &kp KP_N4>
 					, <&macro_release &kp LALT>
 					;
-            label = "DOGSYMBOL";
+            label = "Comma";
         };
-		
+	
 		Dot: Dot {
             compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
@@ -123,17 +148,246 @@
             label = "Dot";
         };
 		
-		Comma: Comma {
+        DogSymbol: DogSymbol {
             compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
             wait-ms = <10>;
 			tap-ms = <10>;
             bindings = <&macro_press   &kp LALT>
-					, <&macro_tap     &kp KP_N4 &kp KP_N4>
+					, <&macro_tap     &kp KP_N6 &kp KP_N4>
 					, <&macro_release &kp LALT>
 					;
-            label = "Comma";
+            label = "DogSymbol";
         };
+		
+		Percent: Percent {
+            compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+            wait-ms = <10>;
+			tap-ms = <10>;
+            bindings = <&macro_press   &kp LALT>
+					, <&macro_tap     &kp KP_N3 &kp KP_N7>
+					, <&macro_release &kp LALT>
+					;
+            label = "Percent";
+        };
+		
+		Colon: Colon {
+            compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+            wait-ms = <10>;
+			tap-ms = <10>;
+            bindings = <&macro_press   &kp LALT>
+					, <&macro_tap     &kp KP_N5 &kp KP_N8>
+					, <&macro_release &kp LALT>
+					;
+            label = "Colon";
+        };
+		
+		Semicolon: Semicolon {
+            compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+            wait-ms = <10>;
+			tap-ms = <10>;
+            bindings = <&macro_press   &kp LALT>
+					, <&macro_tap     &kp KP_N5 &kp KP_N9>
+					, <&macro_release &kp LALT>
+					;
+            label = "Semicolon";
+        };
+		
+		Dollar: Dollar {
+            compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+            wait-ms = <10>;
+			tap-ms = <10>;
+            bindings = <&macro_press   &kp LALT>
+					, <&macro_tap     &kp KP_N3 &kp KP_N6>
+					, <&macro_release &kp LALT>
+					;
+            label = "Dollar";
+        };
+		
+		Sharp: Sharp {
+            compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+            wait-ms = <10>;
+			tap-ms = <10>;
+            bindings = <&macro_press   &kp LALT>
+					, <&macro_tap     &kp KP_N3 &kp KP_N5>
+					, <&macro_release &kp LALT>
+					;
+            label = "Sharp";
+        };
+		
+		VerticalLine: VerticalLine {
+            compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+            wait-ms = <10>;
+			tap-ms = <10>;
+            bindings = <&macro_press   &kp LALT>
+					, <&macro_tap     &kp KP_N1 &kp KP_N2 &kp KP_N4>
+					, <&macro_release &kp LALT>
+					;
+            label = "VerticalLine";
+        };
+		
+		Ampersand: Ampersand {
+            compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+            wait-ms = <10>;
+			tap-ms = <10>;
+            bindings = <&macro_press   &kp LALT>
+					, <&macro_tap     &kp KP_N3 &kp KP_N8>
+					, <&macro_release &kp LALT>
+					;
+            label = "Ampersand";
+        };
+		
+		Number: Number {
+            compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+            wait-ms = <10>;
+			tap-ms = <10>;
+            bindings = <&macro_press   &kp LALT>
+					, <&macro_tap     &kp KP_N2 &kp KP_N5 &kp KP_N2>
+					, <&macro_release &kp LALT>
+					;
+            label = "Number";
+        };
+		
+		ForwardSlash: ForwardSlash {
+            compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+            wait-ms = <10>;
+			tap-ms = <10>;
+            bindings = <&macro_press   &kp LALT>
+					, <&macro_tap     &kp KP_N4 &kp KP_N7>
+					, <&macro_release &kp LALT>
+					;
+            label = "ForwardSlash";
+        };
+		
+		SignIsSmaller: SignIsSmaller {
+            compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+            wait-ms = <10>;
+			tap-ms = <10>;
+            bindings = <&macro_press   &kp LALT>
+					, <&macro_tap     &kp KP_N6 &kp KP_N0>
+					, <&macro_release &kp LALT>
+					;
+            label = "SignIsSmaller";
+        };
+		
+		Carriages: Carriages {
+            compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+            wait-ms = <10>;
+			tap-ms = <10>;
+            bindings = <&macro_press   &kp LALT>
+					, <&macro_tap     &kp KP_N9 &kp KP_N4>
+					, <&macro_release &kp LALT>
+					;
+            label = "Carriages";
+        };
+		
+		SignIsBig: SignIsBig {
+            compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+            wait-ms = <10>;
+			tap-ms = <10>;
+            bindings = <&macro_press   &kp LALT>
+					, <&macro_tap     &kp KP_N6 &kp KP_N2>
+					, <&macro_release &kp LALT>
+					;
+            label = "SignIsBig";
+        };
+		
+		LeftSquareBracket: LeftSquareBracket {
+            compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+            wait-ms = <10>;
+			tap-ms = <10>;
+            bindings = <&macro_press   &kp LALT>
+					, <&macro_tap     &kp KP_N9 &kp KP_N1>
+					, <&macro_release &kp LALT>
+					;
+            label = "LeftSquareBracket";
+        };
+
+		RightSquareBracket: RightSquareBracket {
+            compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+            wait-ms = <10>;
+			tap-ms = <10>;
+            bindings = <&macro_press   &kp LALT>
+					, <&macro_tap     &kp KP_N9 &kp KP_N3>
+					, <&macro_release &kp LALT>
+					;
+            label = "RightSquareBracket";
+        };
+		
+		DoubleQuotationMark: DoubleQuotationMark {
+            compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+            wait-ms = <10>;
+			tap-ms = <10>;
+            bindings = <&macro_press   &kp LALT>
+					, <&macro_tap     &kp KP_N3 &kp KP_N4>
+					, <&macro_release &kp LALT>
+					;
+            label = "DoubleQuotationMark";
+        };
+		
+		Apostrophe: Apostrophe {
+            compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+            wait-ms = <10>;
+			tap-ms = <10>;
+            bindings = <&macro_press   &kp LALT>
+					, <&macro_tap     &kp KP_N3 &kp KP_N9>
+					, <&macro_release &kp LALT>
+					;
+            label = "Apostrophe";
+        };
+		
+		QuestionMark: QuestionMark {
+            compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+            wait-ms = <10>;
+			tap-ms = <10>;
+            bindings = <&macro_press   &kp LALT>
+					, <&macro_tap     &kp KP_N6 &kp KP_N3>
+					, <&macro_release &kp LALT>
+					;
+            label = "QuestionMark";
+        };
+		
+		LeftCurlyBrace: LeftCurlyBrace {
+            compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+            wait-ms = <10>;
+			tap-ms = <10>;
+            bindings = <&macro_press   &kp LALT>
+					, <&macro_tap     &kp KP_N1 &kp KP_N2 &kp KP_N3>
+					, <&macro_release &kp LALT>
+					;
+            label = "LeftCurlyBrace";
+        };
+		
+		RightCurlyBrace: RightCurlyBrace {
+            compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+            wait-ms = <10>;
+			tap-ms = <10>;
+            bindings = <&macro_press   &kp LALT>
+					, <&macro_tap     &kp KP_N1 &kp KP_N2 &kp KP_N5>
+					, <&macro_release &kp LALT>
+					;
+            label = "RightCurlyBrace";
+        };
+		
     };
 
     keymap {
@@ -157,8 +411,8 @@
             display-name = "Lower";
             bindings = <
 &kp F1  &kp F2               &kp F3          &kp F4          &kp F5           &kp F6                 &kp F7           &kp F8  &kp F9  &kp F10  &kp F11        &kp F12
-&trans  &kp LC(PAUSE_BREAK)  &kp HOME        &kp UP_ARROW    &kp END          &trans                 &kp PAGE_UP      &kp N7  &kp N8  &kp N9   &kp LC(SLASH)  &trans
-&trans  &trans               &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LA(RIGHT_SHIFT)    &kp PAGE_DOWN    &kp N4  &kp N5  &kp N6   &kp LC(LA(E))  &trans
+&trans  &kp LC(PAUSE_BREAK)  &kp HOME        &kp UP_ARROW    &kp END          &trans                 &kp PAGE_UP      &kp N7  &kp N8  &kp N9   &ControlBackslash  &trans
+&trans  &trans               &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LA(RIGHT_SHIFT)    &kp PAGE_DOWN    &kp N4  &kp N5  &kp N6   &ControlAltY  &trans
 &trans  &trans               &kp LC(LEFT)    &kp CAPSLOCK    &kp LC(RIGHT)    &kp DELETE             &kp PRINTSCREEN  &kp N1  &kp N2  &kp N3   &trans         &trans
                                              &trans          &trans           &trans                 &trans           &mo 3
                                                              &trans           &trans                 &trans
@@ -169,12 +423,12 @@
             label = "Raise";
             display-name = "Raise";
             bindings = <
-&trans  &trans        &trans       &DogSymbol  &trans    &trans       &trans  	   &trans      &trans      &trans    &trans    &trans
-&trans  &trans        &trans       &trans      &trans  	 &trans    	  &trans       &trans      &trans      &trans    &trans    &trans
-&trans  &trans        &trans       &trans      &trans    &trans       &trans       &trans      &trans      &Dot      &Comma    &trans
-&trans  &trans        &trans       &trans      &trans    &trans       &trans       &trans      &trans      &trans    &trans    &trans
-                                   &trans      &trans    &trans       &trans       &trans
-                                               &mo 3     &trans       &trans
+&trans  &trans        &trans       &DogSymbol    &trans    		&trans         &trans  	    &trans      		&trans      &Percent  	&trans    			   &trans
+&trans  &trans        &trans       &trans        &trans    		&Colon    	   &trans       &SignIsSmaller  	&Carriages  &SignIsBig  &DoubleQuotationMark   &Apostrophe
+&trans  &Ampersand    &Dollar       &trans       &Sharp    		&Semicolon     &trans       &LeftSquareBracket 	&Comma      &Dot      	&RightSquareBracket    &QuestionMark
+&trans  &Number       &trans       &VerticalLine &ForwardSlash  &trans    	   &trans       &LeftCurlyBrace     &trans      &trans    	&RightCurlyBrace       &trans
+                                   &trans        &trans    		&trans         &trans       &trans
+                                                 &mo 3     		&trans         &trans
             >;
         };
 
