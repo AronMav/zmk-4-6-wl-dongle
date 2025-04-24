@@ -8,16 +8,6 @@
     combos {
         compatible = "zmk,combos";
 
-        ParaLeft {
-            bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <4 16>;
-        };
-
-        ParaRight {
-            bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <7 19>;
-        };
-
         bootloaderLeft {
             bindings = <&bootloader>;
             key-positions = <0 13>;
