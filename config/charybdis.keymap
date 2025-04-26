@@ -495,7 +495,7 @@
             bindings = <
 &kp F1  &kp F2               &kp F3          &kp F4          &kp F5           &kp F6                 &kp F7           &kp F8  &kp F9  &kp F10  &kp F11            &kp F12
 &trans  &kp LC(PAUSE_BREAK)  &kp HOME        &kp UP_ARROW    &kp END          &trans                 &kp PAGE_UP      &kp N7  &kp N8  &kp N9   &ControlBackslash  &trans
-&trans  &trans               &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LA(RIGHT_SHIFT)    &kp PAGE_DOWN    &kp N4  &kp N5  &kp N6   &ControlAltY       &trans
+&trans  &trans               &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans    			 &kp PAGE_DOWN    &kp N4  &kp N5  &kp N6   &ControlAltY       &trans
 &trans  &trans               &kp LC(LEFT)    &kp CAPSLOCK    &kp LC(RIGHT)    &kp DELETE             &kp PRINTSCREEN  &kp N1  &kp N2  &kp N3   &kp N0             &trans
                                              &trans          &trans           &trans                 &trans           &mo 3
                                                              &trans           &trans                 &trans
@@ -506,11 +506,11 @@
             label = "Raise";
             display-name = "Raise";
             bindings = <
-&trans           &trans          &trans         &DogSymbol     &trans         &trans        &trans  &trans              &Percent              &trans                 &trans                &trans
-&trans           &kp UNDERSCORE  &kp PLUS       &kp MINUS      &kp ASTERISK   &Colon        &trans  &SignIsSmaller      &Carriages            &SignIsBig             &DoubleQuotationMark  &Apostrophe
-&kp EXCLAMATION  &Ampersand      &Dollar        &kp EQUAL      &Sharp         &Semicolon    &trans  &LeftSquareBracket  &Comma                &Dot                   &RightSquareBracket   &QuestionMark
-&trans           &Number         &kp BACKSLASH  &VerticalLine  &ForwardSlash  &trans        &trans  &LeftCurlyBrace     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &RightCurlyBrace      &trans
-                                                &trans         &trans         &trans        &trans  &trans
+&trans           &trans          &trans         &DogSymbol     &trans         &trans        &trans  			 &trans              &Percent              &trans                 &trans                &trans
+&trans           &kp UNDERSCORE  &kp PLUS       &kp MINUS      &kp ASTERISK   &Colon        &trans  			 &SignIsSmaller      &Carriages            &SignIsBig             &DoubleQuotationMark  &Apostrophe
+&kp EXCLAMATION  &Ampersand      &Dollar        &kp EQUAL      &Sharp         &Semicolon    &kp LA(RIGHT_SHIFT)  &LeftSquareBracket  &Comma                &Dot                   &RightSquareBracket   &QuestionMark
+&trans           &Number         &kp BACKSLASH  &VerticalLine  &ForwardSlash  &trans        &trans			     &LeftCurlyBrace     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &RightCurlyBrace      &trans
+                                                &trans         &trans         &trans        &trans  			 &trans
                                                                &mo 3          &trans        &trans
             >;
         };
