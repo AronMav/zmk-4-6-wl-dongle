@@ -509,8 +509,8 @@
             bindings = <
 &trans           &trans          &trans         &DogSymbol     &trans         &trans        &trans               &trans              &Percent              &trans                 &trans                &trans
 &trans           &kp UNDERSCORE  &kp PLUS       &kp MINUS      &kp ASTERISK   &Colon        &trans               &SignIsSmaller      &Carriages            &SignIsBig             &DoubleQuotationMark  &Apostrophe
-&kp EXCLAMATION  &Ampersand      &Dollar        &kp EQUAL      &Sharp         &Semicolon    &kp LA(RIGHT_SHIFT)  &LeftSquareBracket  &Comma                &Dot                   &RightSquareBracket   &QuestionMark
-&trans           &Number         &kp BACKSLASH  &VerticalLine  &ForwardSlash  &trans        &trans               &LeftCurlyBrace     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &RightCurlyBrace      &trans
+&kp EXCLAMATION  &Ampersand      &Dollar        &kp EQUAL      &Sharp         &Semicolon    &trans				 &LeftSquareBracket  &Comma                &Dot                   &RightSquareBracket   &QuestionMark
+&trans           &Number         &kp BACKSLASH  &VerticalLine  &ForwardSlash  &trans        &kp LA(RIGHT_SHIFT)  &LeftCurlyBrace     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &RightCurlyBrace      &trans
                                                 &trans         &trans         &trans        &trans               &trans
                                                                &mo 3          &trans        &trans
             >;
