@@ -456,6 +456,24 @@
 
             label = "RightCurlyBrace";
         };
+		
+		DotLinux: DotLinux {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL>,
+				<&kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp U &kp N0 &kp N0 &kp N2 &kp E>,
+                <&macro_release>,
+                <&kp LEFT_CONTROL>,
+				<&kp LEFT_SHIFT>,
+
+            label = "DotLinux";
+        };
     };
 
     keymap {
@@ -544,7 +562,7 @@
             bindings = <
 &trans           &trans          &trans         &trans         &trans         &trans        &trans               &trans              &Percent              &trans                 &trans                &trans
 &trans           &kp UNDERSCORE  &kp PLUS       &kp MINUS      &kp ASTERISK   &Colon        &trans               &SignIsSmaller      &Carriages            &SignIsBig             &DoubleQuotationMark  &Apostrophe
-&kp EXCLAMATION  &Ampersand      &Dollar        &kp EQUAL      &Sharp         &Semicolon    &trans               &LeftSquareBracket  &Comma                &Dot                   &RightSquareBracket   &QuestionMark
+&kp EXCLAMATION  &Ampersand      &Dollar        &kp EQUAL      &Sharp         &Semicolon    &trans               &LeftSquareBracket  &Comma                &DotLinux              &RightSquareBracket   &QuestionMark
 &trans           &Number         &kp BACKSLASH  &VerticalLine  &ForwardSlash  &trans        &kp LA(RIGHT_SHIFT)  &LeftCurlyBrace     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &RightCurlyBrace      &trans
                                                 &trans         &trans         &trans        &trans               &trans
                                                                &trans         &trans        &trans
