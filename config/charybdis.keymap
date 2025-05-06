@@ -112,11 +112,11 @@
             tap-ms = <10>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp RALT>,
                 <&macro_tap>,
                 <&kp KP_N4 &kp KP_N4>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp RALT>;
 
             label = "Comma";
         };
@@ -128,11 +128,11 @@
             tap-ms = <10>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp RALT>,
                 <&macro_tap>,
                 <&kp KP_N4 &kp KP_N6>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp RALT>;
 
             label = "Dot";
         };
@@ -144,11 +144,11 @@
             tap-ms = <10>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp RALT>,
                 <&macro_tap>,
                 <&kp KP_N6 &kp KP_N4>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp RALT>;
 
             label = "DogSymbol";
         };
@@ -160,11 +160,11 @@
             tap-ms = <10>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp RALT>,
                 <&macro_tap>,
                 <&kp KP_N3 &kp KP_N7>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp RALT>;
 
             label = "Percent";
         };
@@ -176,11 +176,11 @@
             tap-ms = <10>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp RALT>,
                 <&macro_tap>,
                 <&kp KP_N5 &kp KP_N8>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp RALT>;
 
             label = "Colon";
         };
@@ -192,11 +192,11 @@
             tap-ms = <10>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp RALT>,
                 <&macro_tap>,
                 <&kp KP_N5 &kp KP_N9>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp RALT>;
 
             label = "Semicolon";
         };
@@ -208,11 +208,11 @@
             tap-ms = <10>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp RALT>,
                 <&macro_tap>,
                 <&kp KP_N3 &kp KP_N6>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp RALT>;
 
             label = "Dollar";
         };
@@ -224,11 +224,11 @@
             tap-ms = <10>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp RALT>,
                 <&macro_tap>,
                 <&kp KP_N3 &kp KP_N5>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp RALT>;
 
             label = "Sharp";
         };
@@ -240,11 +240,11 @@
             tap-ms = <10>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp RALT>,
                 <&macro_tap>,
                 <&kp KP_N1 &kp KP_N2 &kp KP_N4>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp RALT>;
 
             label = "VerticalLine";
         };
@@ -256,11 +256,11 @@
             tap-ms = <10>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp RALT>,
                 <&macro_tap>,
                 <&kp KP_N3 &kp KP_N8>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp RALT>;
 
             label = "Ampersand";
         };
@@ -272,11 +272,11 @@
             tap-ms = <10>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp RALT>,
                 <&macro_tap>,
                 <&kp KP_N2 &kp KP_N5 &kp KP_N2>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp RALT>;
 
             label = "Number";
         };
@@ -288,11 +288,11 @@
             tap-ms = <10>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp RALT>,
                 <&macro_tap>,
                 <&kp KP_N4 &kp KP_N7>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp RALT>;
 
             label = "ForwardSlash";
         };
@@ -304,11 +304,11 @@
             tap-ms = <10>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp RALT>,
                 <&macro_tap>,
                 <&kp KP_N6 &kp KP_N0>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp RALT>;
 
             label = "SignIsSmaller";
         };
@@ -320,11 +320,11 @@
             tap-ms = <10>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp RALT>,
                 <&macro_tap>,
                 <&kp KP_N9 &kp KP_N4>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp RALT>;
 
             label = "Carriages";
         };
@@ -336,11 +336,11 @@
             tap-ms = <10>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp RALT>,
                 <&macro_tap>,
                 <&kp KP_N6 &kp KP_N2>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp RALT>;
 
             label = "SignIsBig";
         };
@@ -352,11 +352,11 @@
             tap-ms = <10>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp RALT>,
                 <&macro_tap>,
                 <&kp KP_N9 &kp KP_N1>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp RALT>;
 
             label = "LeftSquareBracket";
         };
@@ -368,11 +368,11 @@
             tap-ms = <10>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp RALT>,
                 <&macro_tap>,
                 <&kp KP_N9 &kp KP_N3>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp RALT>;
 
             label = "RightSquareBracket";
         };
@@ -384,11 +384,11 @@
             tap-ms = <10>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp RALT>,
                 <&macro_tap>,
                 <&kp KP_N3 &kp KP_N4>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp RALT>;
 
             label = "DoubleQuotationMark";
         };
@@ -400,11 +400,11 @@
             tap-ms = <10>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp RALT>,
                 <&macro_tap>,
                 <&kp KP_N3 &kp KP_N9>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp RALT>;
 
             label = "Apostrophe";
         };
@@ -416,11 +416,11 @@
             tap-ms = <10>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp RALT>,
                 <&macro_tap>,
                 <&kp KP_N6 &kp KP_N3>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp RALT>;
 
             label = "QuestionMark";
         };
@@ -432,11 +432,11 @@
             tap-ms = <10>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp RALT>,
                 <&macro_tap>,
                 <&kp KP_N1 &kp KP_N2 &kp KP_N3>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp RALT>;
 
             label = "LeftCurlyBrace";
         };
@@ -448,11 +448,11 @@
             tap-ms = <10>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp RALT>,
                 <&macro_tap>,
                 <&kp KP_N1 &kp KP_N2 &kp KP_N5>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp RALT>;
 
             label = "RightCurlyBrace";
         };
