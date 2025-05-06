@@ -470,7 +470,7 @@
                 <&kp U &kp N0 &kp N0 &kp N2 &kp E>,
                 <&macro_release>,
                 <&kp LEFT_CONTROL>,
-				<&kp LEFT_SHIFT>,
+				<&kp LEFT_SHIFT>;
 
             label = "DotLinux";
         };
