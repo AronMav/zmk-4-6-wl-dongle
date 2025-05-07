@@ -467,7 +467,7 @@
                 <&kp LEFT_CONTROL &kp LEFT_SHIFT>,
                 <&macro_tap>,
                 <&kp U>,
-                <&macro_wait_time 1>,
+                <&macro_wait_time 100>,
                 <&macro_tap>,
                 <&kp N0 &kp N0 &kp N2 &kp E>,
                 <&macro_release>,
