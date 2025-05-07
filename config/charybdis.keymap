@@ -92,8 +92,8 @@
         ControlAltY: ControlAltY {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <20>;
+            tap-ms = <20>;
             bindings =
                 <&macro_press>,
                 <&kp LEFT_CONTROL &kp LALT>,
@@ -108,8 +108,8 @@
         DogSymbolRu: DogSymbolRu {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <20>;
-            tap-ms = <20>;
+            wait-ms = <30>;
+            tap-ms = <30>;
             bindings =
                 <&macro_tap>,
                 <&kp LA(LEFT_SHIFT)>,
@@ -236,8 +236,8 @@
         SignIsBigRu: SignIsBigRu {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <20>;
+            tap-ms = <20>;
             bindings =
                 <&macro_tap>,
                 <&kp LA(LEFT_SHIFT)>,
