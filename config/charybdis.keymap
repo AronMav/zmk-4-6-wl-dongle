@@ -378,7 +378,7 @@
 &trans           &trans            &trans         &DogSymbolRu    &trans                    &trans              &trans             &trans              &kp LS(NUMBER_5)      &trans                 &trans               &trans
 &trans           &kp UNDERSCORE    &kp PLUS       &kp MINUS       &kp ASTERISK              &kp LS(NUMBER_6)    &trans             &SignIsSmallerRu    &CarriagesRu          &SignIsBigRu           &kp LS(NUMBER_2)     &ApostropheRu
 &kp EXCLAMATION  &AmpersandRu      &DollarRu      &kp EQUAL       &SharpRu                  &kp LS(NUMBER_4)    &trans             &LeftSquareBracketRu  &kp LS(SLASH)         &kp SLASH            &RightSquareBracketRu  &kp LS(NUMBER_7)
-&trans           &kp LS(NUMBER_3)  &kp BACKSLASH  &VerticalLineRu &kp LS(NON_US_BACKSLASH)  &trans              &SwitchEnLanguage  &LeftCurlyBrace     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &RightCurlyBrace     &trans
+&trans           &kp LS(NUMBER_3)  &kp BACKSLASH  &VerticalLineRu &kp LS(NON_US_BACKSLASH)  &trans              &SwitchEnLanguage  &LeftCurlyBraceRu     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &RightCurlyBraceRu     &trans
                                                   &trans          &trans                    &trans              &trans             &trans
                                                                   &trans                    &trans              &trans
             >;
