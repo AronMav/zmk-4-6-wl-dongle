@@ -464,13 +464,14 @@
             tap-ms = <10>;
             bindings =
                 <&macro_press>,
-                <&kp LEFT_CONTROL>,
-				<&kp LEFT_SHIFT>,
+                <&kp LEFT_CONTROL &kp LEFT_SHIFT>,
                 <&macro_tap>,
-                <&kp U &kp N0 &kp N0 &kp N2 &kp E>,
+                <&kp U>,
+                <&macro_wait_time 1>,
+                <&macro_tap>,
+                <&kp N0 &kp N0 &kp N2 &kp E>,
                 <&macro_release>,
-                <&kp LEFT_CONTROL>,
-				<&kp LEFT_SHIFT>;
+                <&kp LEFT_CONTROL &kp LEFT_SHIFT>;
 
             label = "DotLinux";
         };
