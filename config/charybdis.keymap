@@ -105,52 +105,20 @@
             label = "ControlAltY";
         };
 
-        Comma: Comma {
+        DogSymbolRu: DogSymbolRu {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <10>;
             tap-ms = <10>;
             bindings =
-                <&macro_press>,
-                <&kp LALT>,
                 <&macro_tap>,
-                <&kp KP_N4 &kp KP_N4>,
-                <&macro_release>,
-                <&kp LALT>;
-
-            label = "Comma";
-        };
-
-        Dot: Dot {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <10>;
-            tap-ms = <10>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
+                <&kp LA(LEFT_SHIFT)>,
                 <&macro_tap>,
-                <&kp KP_N4 &kp KP_N6>,
-                <&macro_release>,
-                <&kp LALT>;
-
-            label = "Dot";
-        };
-
-        DogSymbol: DogSymbol {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <10>;
-            tap-ms = <10>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
+                <&kp LS(NUMBER_2)>,
                 <&macro_tap>,
-                <&kp KP_N6 &kp KP_N4>,
-                <&macro_release>,
-                <&kp LALT>;
+                <&kp LA(LEFT_SHIFT)>;
 
-            label = "DogSymbol";
+            label = "DogSymbolRu";
         };
 
         Percent: Percent {
@@ -457,23 +425,20 @@
             label = "RightCurlyBrace";
         };
 		
-		DotLinux: DotLinux {
+		SwitchEnLanguage: SwitchEnLanguage {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <10>;
-            tap-ms = <10>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_CONTROL &kp LEFT_SHIFT>,
-                <&macro_tap>,
-                <&kp U>,
-                <&macro_wait_time 500>,
-                <&macro_tap>,
-                <&kp N0 &kp N0 &kp N2 &kp E>,
-                <&macro_release>,
-                <&kp LEFT_CONTROL &kp LEFT_SHIFT>;
+            bindings = <&macro_tap>, <&kp LA(LEFT_SHIFT) &to 4>;
 
-            label = "DotLinux";
+            label = "SwitchEnLanguage";
+        };
+		
+		SwitchRuLanguage: SwitchRuLanguage {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LA(LEFT_SHIFT) &to 0>;
+
+            label = "SwitchRuLanguage";
         };
     };
 
@@ -498,7 +463,7 @@
             display-name = "Lower";
             bindings = <
 &kp F1  &kp F2               &kp F3          &kp F4          &kp F5           &kp F6          &kp F7           &kp F8  &kp F9  &kp F10  &kp F11        &kp F12
-&trans  &kp LC(PAUSE_BREAK)  &kp HOME        &kp UP_ARROW    &kp END          &kp CAPSLOCK    &kp PAGE_UP      &kp N7  &kp N8  &kp N9   &kp LC(SLASH)  &to 4
+&trans  &kp LC(PAUSE_BREAK)  &kp HOME        &kp UP_ARROW    &kp END          &kp CAPSLOCK    &kp PAGE_UP      &kp N7  &kp N8  &kp N9   &kp LC(SLASH)  &trans
 &trans  &trans               &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans          &kp PAGE_DOWN    &kp N4  &kp N5  &kp N6   &ControlAltY   &trans
 &trans  &trans               &kp LC(LEFT)    &trans          &kp LC(RIGHT)    &kp DELETE      &kp PRINTSCREEN  &kp N1  &kp N2  &kp N3   &kp N0         &trans
                                              &trans          &trans           &trans          &trans           &trans
@@ -510,10 +475,10 @@
             label = "Raise";
             display-name = "Raise";
             bindings = <
-&trans           &trans          &trans         &DogSymbol     &trans         &trans        &trans               &trans              &Percent              &trans                 &trans                &trans
+&trans           &trans          &trans         &DogSymbolRu   &trans         &trans        &trans               &trans              &Percent              &trans                 &trans                &trans
 &trans           &kp UNDERSCORE  &kp PLUS       &kp MINUS      &kp ASTERISK   &Colon        &trans               &SignIsSmaller      &Carriages            &SignIsBig             &DoubleQuotationMark  &Apostrophe
-&kp EXCLAMATION  &Ampersand      &Dollar        &kp EQUAL      &Sharp         &Semicolon    &trans               &LeftSquareBracket  &Comma                &Dot                   &RightSquareBracket   &QuestionMark
-&trans           &Number         &kp BACKSLASH  &VerticalLine  &ForwardSlash  &trans        &kp LA(RIGHT_SHIFT)  &LeftCurlyBrace     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &RightCurlyBrace      &trans
+&kp EXCLAMATION  &Ampersand      &Dollar        &kp EQUAL      &Sharp         &Semicolon    &trans               &LeftSquareBracket  &kp LS(SLASH)         &kp SLASH              &RightSquareBracket   &QuestionMark
+&trans           &Number         &kp BACKSLASH  &VerticalLine  &ForwardSlash  &trans        &SwitchEnLanguage    &LeftCurlyBrace     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &RightCurlyBrace      &trans
                                                 &trans         &trans         &trans        &trans               &trans
                                                                &trans         &trans        &trans
             >;
@@ -531,8 +496,8 @@
             >;
         };
 
-        BaseLinux {
-            label = "BaseLinux";
+        BaseEn {
+            label = "BaseEn";
             display-name = "Base";
             bindings = <
 &kp F1        &kp F2  &kp F3  &kp F4            &kp F5           &kp F6                &kp F7               &kp F8  &kp F9     &kp F10  &kp F11           &kp F12
@@ -544,8 +509,8 @@
             >;
         };
 
-        LowerLinux {
-            label = "LowerLinux";
+        LowerEn {
+            label = "LowerEn";
             display-name = "Lower";
             bindings = <
 &kp F1  &kp F2               &kp F3          &kp F4          &kp F5           &kp F6          &kp F7           &kp F8  &kp F9  &kp F10  &kp F11        &kp F12
@@ -557,14 +522,14 @@
             >;
         };
 
-        RaiseLinux {
-            label = "RaiseLinux";
+        RaiseEn {
+            label = "RaiseEn";
             display-name = "Raise";
             bindings = <
 &trans           &trans          &trans         &trans         &trans         &trans        &trans               &trans              &Percent              &trans                 &trans                &trans
 &trans           &kp UNDERSCORE  &kp PLUS       &kp MINUS      &kp ASTERISK   &Colon        &trans               &SignIsSmaller      &Carriages            &SignIsBig             &DoubleQuotationMark  &Apostrophe
-&kp EXCLAMATION  &Ampersand      &Dollar        &kp EQUAL      &Sharp         &Semicolon    &trans               &LeftSquareBracket  &Comma                &DotLinux              &RightSquareBracket   &QuestionMark
-&trans           &Number         &kp BACKSLASH  &VerticalLine  &ForwardSlash  &trans        &kp LA(RIGHT_SHIFT)  &LeftCurlyBrace     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &RightCurlyBrace      &trans
+&kp EXCLAMATION  &Ampersand      &Dollar        &kp EQUAL      &Sharp         &Semicolon    &trans               &LeftSquareBracket  &kp COMMA             &kp DOT                &RightSquareBracket   &QuestionMark
+&trans           &Number         &kp BACKSLASH  &VerticalLine  &ForwardSlash  &trans        &SwitchRuLanguage    &LeftCurlyBrace     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &RightCurlyBrace      &trans
                                                 &trans         &trans         &trans        &trans               &trans
                                                                &trans         &trans        &trans
             >;
