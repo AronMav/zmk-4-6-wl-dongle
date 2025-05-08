@@ -33,13 +33,13 @@
     trackball_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
-        layers = <0 2 3 4 6>;
+        layers = <0 2 3 5 6>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
         scale-multiplier = <1>;
         scale-divisor = <1>;
-        bindings = <&ib_toggle_layer 3>;
+        bindings = <&ib_toggle_layer 6>;
     };
 
     trackball_snipe_listener {
@@ -56,7 +56,7 @@
     trackball_scroll_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
-        layers = <1 5>;
+        layers = <1 4>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_MISC>;
         y-input-code = <INPUT_REL_WHEEL>;
@@ -352,7 +352,7 @@
                 <&macro_tap>,
                 <&kp LA(LEFT_SHIFT)>,
                 <&macro_tap>,
-                <&to 4>;
+                <&to 3>;
 
             label = "SwitchRuLanguage";
         };
@@ -400,18 +400,6 @@
             >;
         };
 
-        Mouse {
-            display-name = "Mouse";
-            bindings = <
-&trans     &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&mkp MCLK  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &mkp LCLK
-                           &mkp LCLK  &trans  &mkp RCLK    &trans  &trans
-                                      &trans  &trans       &trans
-            >;
-        };
-
         Base {
             label = "Base";
             display-name = "Base";
@@ -420,7 +408,7 @@
 &kp TAB       &kp Q   &kp W   &kp E             &kp R            &kp T                 &kp Y                &kp U   &kp I      &kp O    &kp P             &kp GRAVE
 &kp LEFT_ALT  &kp A   &kp S   &kp D             &kp F            &kp G                 &kp H                &kp J   &kp K      &kp L    &kp SEMI          &kp ENTER
 &kp ESC       &kp Z   &kp X   &kp C             &kp V            &mt LEFT_BRACKET B    &mt RIGHT_BRACKET N  &kp M   &kp COMMA  &kp DOT  &kp SINGLE_QUOTE  &kp RIGHT_CONTROL
-                              &kp LEFT_CONTROL  &mo 5            &kp LEFT_GUI          &kp RIGHT_SHIFT      &mo 6
+                              &kp LEFT_CONTROL  &mo 4            &kp LEFT_GUI          &kp RIGHT_SHIFT      &mo 5
                                                 &kp RIGHT_SHIFT  &kp SPACE             &kp BSPC
             >;
         };
@@ -448,6 +436,18 @@
 &trans           &kp LS(NUMBER_3)  &kp BACKSLASH  &VerticalLineRu  &kp LS(NON_US_BACKSLASH)  &trans              &SwitchEnLanguage  &LeftCurlyBraceRu     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &RightCurlyBraceRu     &trans
                                                   &trans           &trans                    &trans              &trans             &trans
                                                                    &trans                    &trans              &trans
+            >;
+        };
+
+        Mouse {
+            display-name = "Mouse";
+            bindings = <
+&trans     &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&mkp MCLK  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &mkp LCLK
+                           &mkp LCLK  &trans  &mkp RCLK    &trans  &trans
+                                      &trans  &trans       &trans
             >;
         };
     };
