@@ -36,8 +36,8 @@
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
-        scale-multiplier = <5>;
-        scale-divisor = <5>;
+        scale-multiplier = <1>;
+        scale-divisor = <1>;
         bindings = <&ib_toggle_layer 6>;
     };
 
@@ -61,6 +61,8 @@
         y-input-code = <INPUT_REL_WHEEL>;
         y-invert;
         bindings = <&ib_wheel_scaler 1 16>;
+		scale-multiplier = <4>;
+        scale-divisor = <4>;
     };
 
     ib_wheel_scaler: ib_wheel_scaler {
