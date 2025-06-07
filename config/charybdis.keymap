@@ -49,8 +49,8 @@
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
-        scale-multiplier = <2>;
-        scale-divisor = <2>;
+        scale-multiplier = <5>;
+        scale-divisor = <5>;
     };
 
     trackball_scroll_listener {
