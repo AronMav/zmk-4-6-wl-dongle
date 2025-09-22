@@ -36,7 +36,7 @@
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
-        scale-multiplier = <1>;
+        scale-multiplier = <2>;
         scale-divisor = <1>;
         bindings = <&ib_toggle_layer 6>;
     };
@@ -78,6 +78,20 @@
         time-to-live-ms = <750>;
     };
 
+    ib_movement_scaler: ib_movement_scaler {
+        compatible = "zmk,input-behavior-scaler";
+        #binding-cells = <2>;
+        evt-type = <INPUT_EV_REL>;
+        input-code = <INPUT_REL_X>;
+    };
+
+    ib_movement_scaler_y: ib_movement_scaler_y {
+        compatible = "zmk,input-behavior-scaler";
+        #binding-cells = <2>;
+        evt-type = <INPUT_EV_REL>;
+        input-code = <INPUT_REL_Y>;
+    };
+
     behaviors {
         lt: layer_tap {
             compatible = "zmk,behavior-hold-tap";
@@ -90,6 +104,9 @@
     };
 
     macros {
+        default-wait-ms = <50>;
+        default-tap-ms = <40>;
+
         ControlAltY: ControlAltY {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -109,15 +126,16 @@
         DogSymbolRu: DogSymbolRu {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <20>;
-            tap-ms = <20>;
             bindings =
+                <&macro_press>,
+                <&kp LALT>,
                 <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>,
+                <&kp LSHIFT>,
+                <&macro_release>,
+                <&kp LALT>,
+                <&macro_wait_time 100>,
                 <&macro_tap>,
-                <&kp LS(NUMBER_2)>,
-                <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>;
+                <&kp LS(NUMBER_2)>;
 
             label = "DogSymbolRu";
         };
@@ -125,15 +143,16 @@
         DollarRu: DollarRu {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <20>;
-            tap-ms = <20>;
             bindings =
+                <&macro_press>,
+                <&kp LALT>,
                 <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>,
+                <&kp LSHIFT>,
+                <&macro_release>,
+                <&kp LALT>,
+                <&macro_wait_time 100>,
                 <&macro_tap>,
-                <&kp LS(NUMBER_4)>,
-                <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>;
+                <&kp LS(NUMBER_4)>;
 
             label = "DollarRu";
         };
@@ -141,15 +160,16 @@
         SharpRu: SharpRu {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <20>;
-            tap-ms = <20>;
             bindings =
+                <&macro_press>,
+                <&kp LALT>,
                 <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>,
+                <&kp LSHIFT>,
+                <&macro_release>,
+                <&kp LALT>,
+                <&macro_wait_time 100>,
                 <&macro_tap>,
-                <&kp LS(NUMBER_3)>,
-                <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>;
+                <&kp LS(NUMBER_3)>;
 
             label = "SharpRu";
         };
@@ -157,15 +177,16 @@
         VerticalLineRu: VerticalLineRu {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <20>;
-            tap-ms = <20>;
             bindings =
+                <&macro_press>,
+                <&kp LALT>,
                 <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>,
+                <&kp LSHIFT>,
+                <&macro_release>,
+                <&kp LALT>,
+                <&macro_wait_time 100>,
                 <&macro_tap>,
-                <&kp LS(BACKSLASH)>,
-                <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>;
+                <&kp LS(BACKSLASH)>;
 
             label = "VerticalLineRu";
         };
@@ -173,15 +194,16 @@
         AmpersandRu: AmpersandRu {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <20>;
-            tap-ms = <20>;
             bindings =
+                <&macro_press>,
+                <&kp LALT>,
                 <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>,
+                <&kp LSHIFT>,
+                <&macro_release>,
+                <&kp LALT>,
+                <&macro_wait_time 100>,
                 <&macro_tap>,
-                <&kp LS(NUMBER_7)>,
-                <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>;
+                <&kp LS(NUMBER_7)>;
 
             label = "AmpersandRu";
         };
@@ -189,15 +211,16 @@
         NumberEn: NumberEn {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <20>;
-            tap-ms = <20>;
             bindings =
+                <&macro_press>,
+                <&kp LALT>,
                 <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>,
+                <&kp LSHIFT>,
+                <&macro_release>,
+                <&kp LALT>,
+                <&macro_wait_time 100>,
                 <&macro_tap>,
-                <&kp LS(NUMBER_3)>,
-                <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>;
+                <&kp LS(NUMBER_3)>;
 
             label = "NumberEn";
         };
@@ -205,15 +228,16 @@
         SignIsSmallerRu: SignIsSmallerRu {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <20>;
-            tap-ms = <20>;
             bindings =
+                <&macro_press>,
+                <&kp LALT>,
                 <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>,
+                <&kp LSHIFT>,
+                <&macro_release>,
+                <&kp LALT>,
+                <&macro_wait_time 100>,
                 <&macro_tap>,
-                <&kp LS(COMMA)>,
-                <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>;
+                <&kp LS(COMMA)>;
 
             label = "SignIsSmallerRu";
         };
@@ -221,15 +245,16 @@
         CarriagesRu: CarriagesRu {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <20>;
-            tap-ms = <20>;
             bindings =
+                <&macro_press>,
+                <&kp LALT>,
                 <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>,
+                <&kp LSHIFT>,
+                <&macro_release>,
+                <&kp LALT>,
+                <&macro_wait_time 100>,
                 <&macro_tap>,
-                <&kp LS(NUMBER_6)>,
-                <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>;
+                <&kp LS(NUMBER_6)>;
 
             label = "CarriagesRu";
         };
@@ -237,15 +262,16 @@
         SignIsBigRu: SignIsBigRu {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <20>;
-            tap-ms = <20>;
             bindings =
+                <&macro_press>,
+                <&kp LALT>,
                 <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>,
+                <&kp LSHIFT>,
+                <&macro_release>,
+                <&kp LALT>,
+                <&macro_wait_time 100>,
                 <&macro_tap>,
-                <&kp LS(PERIOD)>,
-                <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>;
+                <&kp LS(PERIOD)>;
 
             label = "SignIsBigRu";
         };
@@ -253,15 +279,16 @@
         LeftSquareBracketRu: LeftSquareBracketRu {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <20>;
-            tap-ms = <20>;
             bindings =
+                <&macro_press>,
+                <&kp LALT>,
                 <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>,
+                <&kp LSHIFT>,
+                <&macro_release>,
+                <&kp LALT>,
+                <&macro_wait_time 100>,
                 <&macro_tap>,
-                <&kp LEFT_BRACKET>,
-                <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>;
+                <&kp LEFT_BRACKET>;
 
             label = "LeftSquareBracketRu";
         };
@@ -269,15 +296,16 @@
         RightSquareBracketRu: RightSquareBracketRu {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <20>;
-            tap-ms = <20>;
             bindings =
+                <&macro_press>,
+                <&kp LALT>,
                 <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>,
+                <&kp LSHIFT>,
+                <&macro_release>,
+                <&kp LALT>,
+                <&macro_wait_time 100>,
                 <&macro_tap>,
-                <&kp RIGHT_BRACKET>,
-                <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>;
+                <&kp RIGHT_BRACKET>;
 
             label = "RightSquareBracketRu";
         };
@@ -285,15 +313,16 @@
         ApostropheRu: ApostropheRu {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <20>;
-            tap-ms = <20>;
             bindings =
+                <&macro_press>,
+                <&kp LALT>,
                 <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>,
+                <&kp LSHIFT>,
+                <&macro_release>,
+                <&kp LALT>,
+                <&macro_wait_time 100>,
                 <&macro_tap>,
-                <&kp SQT>,
-                <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>;
+                <&kp SQT>;
 
             label = "ApostropheRu";
         };
@@ -301,15 +330,16 @@
         LeftCurlyBraceRu: LeftCurlyBraceRu {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <20>;
-            tap-ms = <20>;
             bindings =
+                <&macro_press>,
+                <&kp LALT>,
                 <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>,
+                <&kp LSHIFT>,
+                <&macro_release>,
+                <&kp LALT>,
+                <&macro_wait_time 100>,
                 <&macro_tap>,
-                <&kp LS(LEFT_BRACKET)>,
-                <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>;
+                <&kp LS(LEFT_BRACKET)>;
 
             label = "LeftCurlyBraceRu";
         };
@@ -317,15 +347,16 @@
         RightCurlyBraceRu: RightCurlyBraceRu {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <20>;
-            tap-ms = <20>;
             bindings =
+                <&macro_press>,
+                <&kp LALT>,
                 <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>,
+                <&kp LSHIFT>,
+                <&macro_release>,
+                <&kp LALT>,
+                <&macro_wait_time 100>,
                 <&macro_tap>,
-                <&kp LS(RIGHT_BRACKET)>,
-                <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>;
+                <&kp LS(RIGHT_BRACKET)>;
 
             label = "RightCurlyBraceRu";
         };
@@ -333,11 +364,15 @@
         SwitchEnLanguage: SwitchEnLanguage {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <20>;
-            tap-ms = <20>;
+            wait-ms = <100>;
             bindings =
+                <&macro_press>,
+                <&kp LALT>,
                 <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>,
+                <&kp LSHIFT>,
+                <&macro_release>,
+                <&kp LALT>,
+                <&macro_wait_time 150>,
                 <&macro_tap>,
                 <&to 0>;
 
@@ -347,11 +382,15 @@
         SwitchRuLanguage: SwitchRuLanguage {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <20>;
-            tap-ms = <20>;
+            wait-ms = <100>;
             bindings =
+                <&macro_press>,
+                <&kp LALT>,
                 <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>,
+                <&kp LSHIFT>,
+                <&macro_release>,
+                <&kp LALT>,
+                <&macro_wait_time 150>,
                 <&macro_tap>,
                 <&to 3>;
 
@@ -443,12 +482,12 @@
         Mouse {
             display-name = "Mouse";
             bindings = <
-&trans     &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&mkp MCLK  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &mkp LCLK
-                           &mkp LCLK  &trans  &mkp RCLK    &trans  &trans
-                                      &trans  &trans       &trans
+&trans     &trans  &trans        &trans        &trans  &trans           &trans           &trans           &trans            &trans            &trans  &trans
+&trans     &trans  &mmv MOVE_UP  &trans        &trans  &trans           &trans           &msc SCRL_UP     &trans            &trans            &trans  &trans
+&trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans           &trans           &msc SCRL_LEFT   &msc SCRL_DOWN    &msc SCRL_RIGHT   &trans  &trans
+&mkp MCLK  &trans  &trans        &trans        &trans  &trans           &trans           &mkp MB4         &trans            &mkp MB5          &trans  &mkp LCLK
+                                 &mkp LCLK     &trans  &mkp RCLK        &trans           &trans
+                                               &trans  &trans           &trans
             >;
         };
     };
