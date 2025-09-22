@@ -135,7 +135,14 @@
                 <&kp LALT>,
                 <&macro_wait_time 100>,
                 <&macro_tap>,
-                <&kp LS(NUMBER_2)>;
+                <&kp LS(NUMBER_2)>,
+                <&macro_wait_time 50>,
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp LSHIFT>,
+                <&macro_release>,
+                <&kp LALT>;
 
             label = "DogSymbolRu";
         };
@@ -152,7 +159,14 @@
                 <&kp LALT>,
                 <&macro_wait_time 100>,
                 <&macro_tap>,
-                <&kp LS(NUMBER_4)>;
+                <&kp LS(NUMBER_4)>,
+                <&macro_wait_time 50>,
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp LSHIFT>,
+                <&macro_release>,
+                <&kp LALT>;
 
             label = "DollarRu";
         };
@@ -169,7 +183,14 @@
                 <&kp LALT>,
                 <&macro_wait_time 100>,
                 <&macro_tap>,
-                <&kp LS(NUMBER_3)>;
+                <&kp LS(NUMBER_3)>,
+                <&macro_wait_time 50>,
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp LSHIFT>,
+                <&macro_release>,
+                <&kp LALT>;
 
             label = "SharpRu";
         };
@@ -186,7 +207,14 @@
                 <&kp LALT>,
                 <&macro_wait_time 100>,
                 <&macro_tap>,
-                <&kp LS(BACKSLASH)>;
+                <&kp LS(BACKSLASH)>,
+                <&macro_wait_time 50>,
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp LSHIFT>,
+                <&macro_release>,
+                <&kp LALT>;
 
             label = "VerticalLineRu";
         };
@@ -203,7 +231,14 @@
                 <&kp LALT>,
                 <&macro_wait_time 100>,
                 <&macro_tap>,
-                <&kp LS(NUMBER_7)>;
+                <&kp LS(NUMBER_7)>,
+                <&macro_wait_time 50>,
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp LSHIFT>,
+                <&macro_release>,
+                <&kp LALT>;
 
             label = "AmpersandRu";
         };
@@ -220,7 +255,14 @@
                 <&kp LALT>,
                 <&macro_wait_time 100>,
                 <&macro_tap>,
-                <&kp LS(NUMBER_3)>;
+                <&kp LS(NUMBER_3)>,
+                <&macro_wait_time 50>,
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp LSHIFT>,
+                <&macro_release>,
+                <&kp LALT>;
 
             label = "NumberEn";
         };
@@ -237,7 +279,14 @@
                 <&kp LALT>,
                 <&macro_wait_time 100>,
                 <&macro_tap>,
-                <&kp LS(COMMA)>;
+                <&kp LS(COMMA)>,
+                <&macro_wait_time 50>,
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp LSHIFT>,
+                <&macro_release>,
+                <&kp LALT>;
 
             label = "SignIsSmallerRu";
         };
@@ -254,7 +303,14 @@
                 <&kp LALT>,
                 <&macro_wait_time 100>,
                 <&macro_tap>,
-                <&kp LS(NUMBER_6)>;
+                <&kp LS(NUMBER_6)>,
+                <&macro_wait_time 50>,
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp LSHIFT>,
+                <&macro_release>,
+                <&kp LALT>;
 
             label = "CarriagesRu";
         };
@@ -271,7 +327,14 @@
                 <&kp LALT>,
                 <&macro_wait_time 100>,
                 <&macro_tap>,
-                <&kp LS(PERIOD)>;
+                <&kp LS(PERIOD)>,
+                <&macro_wait_time 50>,
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp LSHIFT>,
+                <&macro_release>,
+                <&kp LALT>;
 
             label = "SignIsBigRu";
         };
@@ -288,7 +351,14 @@
                 <&kp LALT>,
                 <&macro_wait_time 100>,
                 <&macro_tap>,
-                <&kp LEFT_BRACKET>;
+                <&kp LEFT_BRACKET>,
+                <&macro_wait_time 50>,
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp LSHIFT>,
+                <&macro_release>,
+                <&kp LALT>;
 
             label = "LeftSquareBracketRu";
         };
@@ -305,7 +375,14 @@
                 <&kp LALT>,
                 <&macro_wait_time 100>,
                 <&macro_tap>,
-                <&kp RIGHT_BRACKET>;
+                <&kp RIGHT_BRACKET>,
+                <&macro_wait_time 50>,
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp LSHIFT>,
+                <&macro_release>,
+                <&kp LALT>;
 
             label = "RightSquareBracketRu";
         };
@@ -322,7 +399,14 @@
                 <&kp LALT>,
                 <&macro_wait_time 100>,
                 <&macro_tap>,
-                <&kp SQT>;
+                <&kp SQT>,
+                <&macro_wait_time 50>,
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp LSHIFT>,
+                <&macro_release>,
+                <&kp LALT>;
 
             label = "ApostropheRu";
         };
@@ -339,7 +423,14 @@
                 <&kp LALT>,
                 <&macro_wait_time 100>,
                 <&macro_tap>,
-                <&kp LS(LEFT_BRACKET)>;
+                <&kp LS(LEFT_BRACKET)>,
+                <&macro_wait_time 50>,
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp LSHIFT>,
+                <&macro_release>,
+                <&kp LALT>;
 
             label = "LeftCurlyBraceRu";
         };
@@ -356,7 +447,14 @@
                 <&kp LALT>,
                 <&macro_wait_time 100>,
                 <&macro_tap>,
-                <&kp LS(RIGHT_BRACKET)>;
+                <&kp LS(RIGHT_BRACKET)>,
+                <&macro_wait_time 50>,
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp LSHIFT>,
+                <&macro_release>,
+                <&kp LALT>;
 
             label = "RightCurlyBraceRu";
         };
