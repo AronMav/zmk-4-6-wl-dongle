@@ -4,7 +4,6 @@
 # to the `include` property. You can also use the `cmake-args` property to
 # pass flags to the build command and `artifact-name` to assign a name to
 # distinguish build outputs from each other1:
-#
 # board: [ "nice_nano_v2" ]
 # shield: [ "corne_left", "corne_right" ]
 # include:
