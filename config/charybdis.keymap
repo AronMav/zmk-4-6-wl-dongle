@@ -105,7 +105,7 @@
 
     macros {
         default-wait-ms = <20>;
-        default-tap-ms = <10>;
+        default-tap-ms = <20>;
 
         ControlAltY: ControlAltY {
             compatible = "zmk,behavior-macro";
