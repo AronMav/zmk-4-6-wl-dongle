@@ -104,14 +104,12 @@
     };
 
     macros {
-        default-wait-ms = <10>;
-        default-tap-ms = <10>;
+        default-wait-ms = <30>;
+        default-tap-ms = <30>;
 
         ControlAltY: ControlAltY {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <20>;
-            tap-ms = <20>;
             bindings =
                 <&macro_press>,
                 <&kp LEFT_CONTROL &kp LALT>,
@@ -127,20 +125,12 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&kp LALT>,
                 <&macro_tap>,
-                <&kp LSHIFT>,
-                <&macro_release>,
-                <&kp LALT>,
+                <&kp LA(LEFT_SHIFT)>,
                 <&macro_tap>,
                 <&kp LS(NUMBER_2)>,
-                <&macro_press>,
-                <&kp LALT>,
                 <&macro_tap>,
-                <&kp LSHIFT>,
-                <&macro_release>,
-                <&kp LALT>;
+                <&kp LA(LEFT_SHIFT)>;
 
             label = "DogSymbolRu";
         };
@@ -149,20 +139,12 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&kp LALT>,
                 <&macro_tap>,
-                <&kp LSHIFT>,
-                <&macro_release>,
-                <&kp LALT>,
+                <&kp LA(LEFT_SHIFT)>,
                 <&macro_tap>,
                 <&kp LS(NUMBER_4)>,
-                <&macro_press>,
-                <&kp LALT>,
                 <&macro_tap>,
-                <&kp LSHIFT>,
-                <&macro_release>,
-                <&kp LALT>;
+                <&kp LA(LEFT_SHIFT)>;
 
             label = "DollarRu";
         };
@@ -171,20 +153,12 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&kp LALT>,
                 <&macro_tap>,
-                <&kp LSHIFT>,
-                <&macro_release>,
-                <&kp LALT>,
+                <&kp LA(LEFT_SHIFT)>,
                 <&macro_tap>,
                 <&kp LS(NUMBER_3)>,
-                <&macro_press>,
-                <&kp LALT>,
                 <&macro_tap>,
-                <&kp LSHIFT>,
-                <&macro_release>,
-                <&kp LALT>;
+                <&kp LA(LEFT_SHIFT)>;
 
             label = "SharpRu";
         };
@@ -193,20 +167,12 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&kp LALT>,
                 <&macro_tap>,
-                <&kp LSHIFT>,
-                <&macro_release>,
-                <&kp LALT>,
+                <&kp LA(LEFT_SHIFT)>,
                 <&macro_tap>,
                 <&kp LS(BACKSLASH)>,
-                <&macro_press>,
-                <&kp LALT>,
                 <&macro_tap>,
-                <&kp LSHIFT>,
-                <&macro_release>,
-                <&kp LALT>;
+                <&kp LA(LEFT_SHIFT)>;
 
             label = "VerticalLineRu";
         };
@@ -215,20 +181,12 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&kp LALT>,
                 <&macro_tap>,
-                <&kp LSHIFT>,
-                <&macro_release>,
-                <&kp LALT>,
+                <&kp LA(LEFT_SHIFT)>,
                 <&macro_tap>,
                 <&kp LS(NUMBER_7)>,
-                <&macro_press>,
-                <&kp LALT>,
                 <&macro_tap>,
-                <&kp LSHIFT>,
-                <&macro_release>,
-                <&kp LALT>;
+                <&kp LA(LEFT_SHIFT)>;
 
             label = "AmpersandRu";
         };
@@ -237,20 +195,12 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&kp LALT>,
                 <&macro_tap>,
-                <&kp LSHIFT>,
-                <&macro_release>,
-                <&kp LALT>,
+                <&kp LA(LEFT_SHIFT)>,
                 <&macro_tap>,
                 <&kp LS(NUMBER_3)>,
-                <&macro_press>,
-                <&kp LALT>,
                 <&macro_tap>,
-                <&kp LSHIFT>,
-                <&macro_release>,
-                <&kp LALT>;
+                <&kp LA(LEFT_SHIFT)>;
 
             label = "NumberEn";
         };
@@ -259,20 +209,12 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&kp LALT>,
                 <&macro_tap>,
-                <&kp LSHIFT>,
-                <&macro_release>,
-                <&kp LALT>,
+                <&kp LA(LEFT_SHIFT)>,
                 <&macro_tap>,
                 <&kp LS(COMMA)>,
-                <&macro_press>,
-                <&kp LALT>,
                 <&macro_tap>,
-                <&kp LSHIFT>,
-                <&macro_release>,
-                <&kp LALT>;
+                <&kp LA(LEFT_SHIFT)>;
 
             label = "SignIsSmallerRu";
         };
@@ -281,20 +223,12 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&kp LALT>,
                 <&macro_tap>,
-                <&kp LSHIFT>,
-                <&macro_release>,
-                <&kp LALT>,
+                <&kp LA(LEFT_SHIFT)>,
                 <&macro_tap>,
                 <&kp LS(NUMBER_6)>,
-                <&macro_press>,
-                <&kp LALT>,
                 <&macro_tap>,
-                <&kp LSHIFT>,
-                <&macro_release>,
-                <&kp LALT>;
+                <&kp LA(LEFT_SHIFT)>;
 
             label = "CarriagesRu";
         };
@@ -303,20 +237,12 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&kp LALT>,
                 <&macro_tap>,
-                <&kp LSHIFT>,
-                <&macro_release>,
-                <&kp LALT>,
+                <&kp LA(LEFT_SHIFT)>,
                 <&macro_tap>,
                 <&kp LS(PERIOD)>,
-                <&macro_press>,
-                <&kp LALT>,
                 <&macro_tap>,
-                <&kp LSHIFT>,
-                <&macro_release>,
-                <&kp LALT>;
+                <&kp LA(LEFT_SHIFT)>;
 
             label = "SignIsBigRu";
         };
@@ -325,20 +251,12 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&kp LALT>,
                 <&macro_tap>,
-                <&kp LSHIFT>,
-                <&macro_release>,
-                <&kp LALT>,
+                <&kp LA(LEFT_SHIFT)>,
                 <&macro_tap>,
                 <&kp LEFT_BRACKET>,
-                <&macro_press>,
-                <&kp LALT>,
                 <&macro_tap>,
-                <&kp LSHIFT>,
-                <&macro_release>,
-                <&kp LALT>;
+                <&kp LA(LEFT_SHIFT)>;
 
             label = "LeftSquareBracketRu";
         };
@@ -347,20 +265,12 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&kp LALT>,
                 <&macro_tap>,
-                <&kp LSHIFT>,
-                <&macro_release>,
-                <&kp LALT>,
+                <&kp LA(LEFT_SHIFT)>,
                 <&macro_tap>,
                 <&kp RIGHT_BRACKET>,
-                <&macro_press>,
-                <&kp LALT>,
                 <&macro_tap>,
-                <&kp LSHIFT>,
-                <&macro_release>,
-                <&kp LALT>;
+                <&kp LA(LEFT_SHIFT)>;
 
             label = "RightSquareBracketRu";
         };
@@ -369,20 +279,12 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&kp LALT>,
                 <&macro_tap>,
-                <&kp LSHIFT>,
-                <&macro_release>,
-                <&kp LALT>,
+                <&kp LA(LEFT_SHIFT)>,
                 <&macro_tap>,
                 <&kp SQT>,
-                <&macro_press>,
-                <&kp LALT>,
                 <&macro_tap>,
-                <&kp LSHIFT>,
-                <&macro_release>,
-                <&kp LALT>;
+                <&kp LA(LEFT_SHIFT)>;
 
             label = "ApostropheRu";
         };
@@ -391,20 +293,12 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&kp LALT>,
                 <&macro_tap>,
-                <&kp LSHIFT>,
-                <&macro_release>,
-                <&kp LALT>,
+                <&kp LA(LEFT_SHIFT)>,
                 <&macro_tap>,
                 <&kp LS(LEFT_BRACKET)>,
-                <&macro_press>,
-                <&kp LALT>,
                 <&macro_tap>,
-                <&kp LSHIFT>,
-                <&macro_release>,
-                <&kp LALT>;
+                <&kp LA(LEFT_SHIFT)>;
 
             label = "LeftCurlyBraceRu";
         };
@@ -413,20 +307,12 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&kp LALT>,
                 <&macro_tap>,
-                <&kp LSHIFT>,
-                <&macro_release>,
-                <&kp LALT>,
+                <&kp LA(LEFT_SHIFT)>,
                 <&macro_tap>,
                 <&kp LS(RIGHT_BRACKET)>,
-                <&macro_press>,
-                <&kp LALT>,
                 <&macro_tap>,
-                <&kp LSHIFT>,
-                <&macro_release>,
-                <&kp LALT>;
+                <&kp LA(LEFT_SHIFT)>;
 
             label = "RightCurlyBraceRu";
         };
@@ -434,14 +320,9 @@
         SwitchEnLanguage: SwitchEnLanguage {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <100>;
             bindings =
-                <&macro_press>,
-                <&kp LALT>,
                 <&macro_tap>,
-                <&kp LSHIFT>,
-                <&macro_release>,
-                <&kp LALT>,
+                <&kp LA(LEFT_SHIFT)>,
                 <&macro_tap>,
                 <&to 0>;
 
@@ -451,14 +332,9 @@
         SwitchRuLanguage: SwitchRuLanguage {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <100>;
             bindings =
-                <&macro_press>,
-                <&kp LALT>,
                 <&macro_tap>,
-                <&kp LSHIFT>,
-                <&macro_release>,
-                <&kp LALT>,
+                <&kp LA(LEFT_SHIFT)>,
                 <&macro_tap>,
                 <&to 3>;
 
