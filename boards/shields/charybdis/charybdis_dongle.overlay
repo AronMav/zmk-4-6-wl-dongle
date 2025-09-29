@@ -18,9 +18,8 @@
 		compatible = "zmk,virtual-input";
 	};
 
-	input_relay_config_trackball {
-		compatible = "zmk,split-peripheral-input-relay";
+	vtrackball_listener {
+		compatible = "zmk,input-listener";
 		device = <&vtrackball>;
-		relay-channel = <102>;
 	};
 };
