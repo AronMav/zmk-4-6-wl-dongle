@@ -375,7 +375,7 @@
             label = "RaiseEn";
             display-name = "Raise";
             bindings = <
-&trans           &trans            &trans            &kp LS(NUMBER_2)   &trans            &trans               &trans             &trans                &kp LS(NUMBER_5)      &trans                 &trans                 &trans
+&trans           &trans            &trans            &kp LS(NUMBER_2)   &trans            &trans               &trans             &trans                &kp LS(NUMBER_5)      &trans                 &trans                 &studio_unlock
 &trans           &kp UNDERSCORE    &kp PLUS          &kp MINUS          &kp ASTERISK      &kp LS(SEMICOLON)    &trans             &kp LS(COMMA)         &kp LS(N6)            &kp LS(PERIOD)         &kp LS(SQT)            &kp SQT
 &kp EXCLAMATION  &kp LS(NUMBER_7)  &kp LS(NUMBER_4)  &kp EQUAL          &kp LS(NUMBER_3)  &kp SEMICOLON        &trans             &kp LEFT_BRACKET      &kp COMMA             &kp DOT                &kp RIGHT_BRACKET      &kp LS(SLASH)
 &trans           &NumberEn         &kp BACKSLASH     &kp LS(BACKSLASH)  &kp SLASH         &trans               &SwitchRuLanguage  &kp LS(LEFT_BRACKET)  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LS(RIGHT_BRACKET)  &trans
@@ -432,6 +432,32 @@
 &mkp MCLK  &trans  &trans        &trans        &trans  &trans           &trans           &mkp MB4         &trans            &mkp MB5          &trans  &mkp LCLK
                                  &mkp LCLK     &trans  &mkp RCLK        &trans           &trans
                                                &trans  &trans           &trans
+            >;
+        };
+
+        extra1 {
+            display-name = "Extra1";
+            status = "reserved";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans
+                                &trans  &trans    &trans
+            >;
+        };
+
+        extra2 {
+            display-name = "Extra2";
+            status = "reserved";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans
+                                &trans  &trans    &trans
             >;
         };
     };
