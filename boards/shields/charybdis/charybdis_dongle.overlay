@@ -22,9 +22,12 @@
 		compatible = "zmk,input-listener";
 		device = <&vtrackball>;
 	};
+};
 
-	trackball_listener {
-		compatible = "zmk,input-listener";
-		device = <&trackball_split>;
-	};
+&trackball_listener {
+	status = "okay";
+};
+
+&trackball_split {
+	status = "okay";
 };
