@@ -29,6 +29,38 @@
             bindings = <&sys_reset>;
             key-positions = <11 23>;
         };
+
+        switchToEn {
+            bindings = <&SwitchEnLanguage>;
+            key-positions = <25 26>;
+            layers = <3 4 5>;
+        };
+
+        switchToRu {
+            bindings = <&SwitchRuLanguage>;
+            key-positions = <25 26>;
+            layers = <0 1 2>;
+        };
+
+        btProfile0 {
+            bindings = <&bt BT_SEL 0>;
+            key-positions = <1 13>;
+        };
+
+        btProfile1 {
+            bindings = <&bt BT_SEL 1>;
+            key-positions = <2 14>;
+        };
+
+        btProfile2 {
+            bindings = <&bt BT_SEL 2>;
+            key-positions = <3 15>;
+        };
+
+        btClear {
+            bindings = <&bt BT_CLR>;
+            key-positions = <4 16>;
+        };
     };
 
     trackball_wheel_scaler: trackball_wheel_scaler {
@@ -46,7 +78,7 @@
 
         scroll_mode {
             layers = <1 4>;
-            input-processors = <&zip_xy_scaler 1 4 &zip_xy_to_scroll_mapper &zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT) &trackball_wheel_scaler 1 16>;
+            input-processors = <&zip_xy_scaler 1 3 &zip_xy_to_scroll_mapper &zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT) &trackball_wheel_scaler 1 8>;
         };
     };
 
@@ -57,13 +89,14 @@
             flavor = "balanced";
             tapping-term-ms = <240>;
             quick-tap-ms = <150>;
+            require-prior-idle-ms = <150>;
             bindings = <&mo>, <&kp>;
         };
     };
 
     macros {
-        default-wait-ms = <20>;
-        default-tap-ms = <20>;
+        default-wait-ms = <10>;
+        default-tap-ms = <10>;
 
         ControlAltY: ControlAltY {
             compatible = "zmk,behavior-macro";
@@ -384,38 +417,36 @@
         Mouse {
             display-name = "Mouse";
             bindings = <
-&trans     &trans  &trans        &trans        &trans  &trans           &trans           &trans           &trans            &trans            &trans  &trans
-&trans     &trans  &mmv MOVE_UP  &trans        &trans  &trans           &trans           &msc SCRL_UP     &trans            &trans            &trans  &trans
-&trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans           &trans           &msc SCRL_LEFT   &msc SCRL_DOWN    &msc SCRL_RIGHT   &trans  &trans
-&mkp MCLK  &trans  &trans        &trans        &trans  &trans           &trans           &mkp MB4         &trans            &mkp MB5          &trans  &mkp LCLK
-                                 &mkp LCLK     &trans  &mkp RCLK        &trans           &trans
-                                               &trans  &trans           &trans
+&trans     &trans     &trans      &trans      &trans  &trans        &trans     &trans      &trans      &trans      &trans     &trans
+&trans     &trans     &mkp LCLK   &mkp MCLK   &mkp RCLK &trans      &trans     &trans      &trans      &trans      &trans     &trans
+&trans     &trans     &mkp MB4    &mkp MB5    &trans  &trans        &trans     &trans      &trans      &trans      &trans     &trans
+&trans     &trans     &trans      &trans      &trans  &trans        &trans     &trans      &trans      &trans      &trans     &trans
+                                  &mkp LCLK   &trans  &mkp RCLK     &trans     &trans
+                                              &trans  &trans        &trans
             >;
         };
 
         extra1 {
-            display-name = "Extra1";
-            status = "reserved";
+            display-name = "Media";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans            &trans            &trans            &trans      &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp C_PLAY_PAUSE  &kp C_PREVIOUS    &kp C_NEXT        &trans      &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp C_MUTE        &kp C_VOLUME_DOWN &kp C_VOLUME_UP   &kp C_BRI_DN &kp C_BRI_UP  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans            &trans            &trans            &trans      &trans  &trans
+                        &trans  &trans  &trans    &trans            &trans
                                 &trans  &trans    &trans
             >;
         };
 
         extra2 {
-            display-name = "Extra2";
-            status = "reserved";
+            display-name = "Function";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans
-                                &trans  &trans    &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                                        &trans        &trans        &trans          &trans  &trans
+                                                      &trans        &trans          &trans
             >;
         };
     };
