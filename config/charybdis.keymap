@@ -39,7 +39,7 @@
         compatible = "zmk,input-processor-scaler";
         #input-processor-cells = <2>;
         type = <INPUT_EV_REL>;
-        codes = <INPUT_REL_WHEEL>;
+        codes = <INPUT_REL_WHEEL INPUT_REL_HWHEEL>;
         track-remainders;
     };
 
@@ -48,16 +48,11 @@
 
         trackball_scroll_config: trackball_scroll_config {
             layers = <1 4>;
-            input-processors = <&zip_xy_to_scroll_mapper &trackball_wheel_scaler 1 4>;
-        };
-
-        trackball_snipe_config: trackball_snipe_config {
-            layers = <6>;
-            input-processors = <&zip_xy_scaler 1 1>;
+            input-processors = <&zip_xy_scaler 1 4 &zip_xy_to_scroll_mapper &zip_scroll_transform INPUT_TRANSFORM_Y_INVERT &trackball_wheel_scaler 1 16>;
         };
 
         trackball_default_config: trackball_default_config {
-            layers = <0 2 3 5>;
+            layers = <0 2 3 5 6>;
             input-processors = <&zip_xy_scaler 2 1 &zip_temp_layer 6 750>;
         };
     };
