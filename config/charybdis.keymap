@@ -30,6 +30,11 @@
         };
     };
 
+    vtrackball_listener: vtrackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&vtrackball>;
+    };
+
     trackball_wheel_scaler: trackball_wheel_scaler {
         compatible = "zmk,input-processor-scaler";
         #input-processor-cells = <2>;
