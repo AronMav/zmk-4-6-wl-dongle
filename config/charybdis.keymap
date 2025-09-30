@@ -31,11 +31,6 @@
         };
     };
 
-    vtrackball_listener: vtrackball_listener {
-        compatible = "zmk,input-listener";
-        device = <&vtrackball>;
-    };
-
     trackball_wheel_scaler: trackball_wheel_scaler {
         compatible = "zmk,input-processor-scaler";
         #input-processor-cells = <2>;
@@ -44,17 +39,14 @@
         track-remainders;
     };
 
-    input_configs {
-        compatible = "zmk,input-configs";
+    vtrackball_listener: vtrackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&vtrackball>;
+        input-processors = <&zip_xy_scaler 2 1 &zip_temp_layer 6 750>;
 
-        trackball_scroll_config: trackball_scroll_config {
+        scroll_mode {
             layers = <1 4>;
             input-processors = <&zip_xy_scaler 1 4 &zip_xy_to_scroll_mapper &zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT) &trackball_wheel_scaler 1 16>;
-        };
-
-        trackball_default_config: trackball_default_config {
-            layers = <0 2 3 5 6>;
-            input-processors = <&zip_xy_scaler 2 1 &zip_temp_layer 6 750>;
         };
     };
 
