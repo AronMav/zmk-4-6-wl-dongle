@@ -38,9 +38,8 @@
 	vtrackball: virtual_input_trackball {
 		compatible = "zmk,virtual-input";
 	};
+};
 
-	trackball_split: input_split_trackball {
-		compatible = "zmk,input-split";
-		device = <&trackball>;
-	};
+&trackball_split {
+	device = <&trackball>;
 };
