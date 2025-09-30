@@ -13,21 +13,10 @@
     };
 };
 
-/ {
-	vtrackball: virtual_input_trackball {
-		compatible = "zmk,virtual-input";
-	};
-
-	vtrackball_listener {
-		compatible = "zmk,input-listener";
-		device = <&vtrackball>;
-	};
-};
-
 &trackball_listener {
-	status = "okay";
+    status = "okay";
 };
 
 &trackball_split {
-	status = "okay";
+    status = "okay";
 };
