@@ -4,7 +4,10 @@
       "WebFetch(domain:github.com)",
       "WebSearch",
       "WebFetch(domain:zmk.dev)",
-      "WebFetch(domain:www.reddit.com)"
+      "WebFetch(domain:www.reddit.com)",
+      "Bash(git log:*)",
+      "Bash(cat:*)",
+      "Bash(west update:*)"
     ],
     "deny": [],
     "ask": []
