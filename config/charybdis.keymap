@@ -48,7 +48,7 @@
 
         trackball_scroll_config: trackball_scroll_config {
             layers = <1 4>;
-            input-processors = <&zip_xy_scaler 1 4 &zip_xy_to_scroll_mapper &zip_scroll_transform INPUT_TRANSFORM_Y_INVERT &trackball_wheel_scaler 1 16>;
+            input-processors = <&zip_xy_scaler 1 4 &zip_xy_to_scroll_mapper &zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT) &trackball_wheel_scaler 1 16>;
         };
 
         trackball_default_config: trackball_default_config {
