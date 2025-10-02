@@ -4,7 +4,6 @@
 #include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/input_transform.h>
-#include <input/processors.dtsi>
 
 / {
     combos {
@@ -63,6 +62,28 @@
         };
     };
 
+    zip_xy_scaler: zip_xy_scaler {
+        compatible = "zmk,input-processor-scaler";
+        #input-processor-cells = <2>;
+        type = <INPUT_EV_REL>;
+        codes = <INPUT_REL_X INPUT_REL_Y>;
+    };
+
+    zip_xy_to_scroll_mapper: zip_xy_to_scroll_mapper {
+        compatible = "zmk,input-processor-code-mapper";
+        #input-processor-cells = <0>;
+        type = <INPUT_EV_REL>;
+        map = <INPUT_REL_X INPUT_REL_HWHEEL
+               INPUT_REL_Y INPUT_REL_WHEEL>;
+    };
+
+    zip_scroll_transform: zip_scroll_transform {
+        compatible = "zmk,input-processor-transform";
+        #input-processor-cells = <1>;
+        type = <INPUT_EV_REL>;
+        codes = <INPUT_REL_WHEEL INPUT_REL_HWHEEL>;
+    };
+
     trackball_wheel_scaler: trackball_wheel_scaler {
         compatible = "zmk,input-processor-scaler";
         #input-processor-cells = <2>;
@@ -82,13 +103,13 @@
         device = <&vtrackball>;
 
         move {
-            layers = <0 1 2 3 4 5>;
+            layers = <0 2 3 5>;
             input-processors = <&zip_xy_scaler 2 1 &auto_mouse_layer 6 1000>;
         };
 
         scroll_mode {
             layers = <1 4>;
-            input-processors = <&zip_xy_scaler 1 3 &zip_xy_to_scroll_mapper &zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT) &trackball_wheel_scaler 1 8>;
+            input-processors = <&zip_xy_scaler 1 3 &zip_xy_to_scroll_mapper &zip_scroll_transform 0 &trackball_wheel_scaler 1 8>;
         };
     };
 
