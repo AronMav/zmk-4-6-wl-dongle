@@ -1,0 +1,58 @@
+name: Draw ZMK keymaps
+
+on:
+  push:
+    branches:
+      - main
+      - feature
+    paths:
+      - 'config/*.keymap'
+      - 'keymap-drawer/**'
+  pull_request:
+    paths:
+      - 'config/*.keymap'
+      - 'keymap-drawer/**'
+  workflow_dispatch:
+
+jobs:
+  draw:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install keymap-drawer
+        run: python3 -m pip install keymap-drawer
+
+      - name: Draw keymaps
+        run: |
+          mkdir -p keymap-drawer
+          for keymap_file in config/*.keymap; do
+            keyboard=$(basename "$keymap_file" .keymap)
+            echo "Processing $keyboard..."
+            keymap parse -c keymap-drawer/config.yaml -z "$keymap_file" > "keymap-drawer/$keyboard.yaml"
+            keymap draw -c keymap-drawer/config.yaml "keymap-drawer/$keyboard.yaml" > "keymap-drawer/$keyboard.svg"
+          done
+
+      - name: Commit updated images
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          file_pattern: "keymap-drawer/*.svg keymap-drawer/*.yaml"
+          commit_message: "Update keymap diagrams [skip ci]"
+          commit_user_name: "GitHub Actions"
+          commit_user_email: "actions@github.com"
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: keymap-diagrams
+          path: keymap-drawer/*.svg

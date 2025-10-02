@@ -71,19 +71,20 @@
         track-remainders;
     };
 
-    trackball_threshold: trackball_threshold {
-        compatible = "zmk,input-processor-threshold";
-        #input-processor-cells = <0>;
-        type = <INPUT_EV_REL>;
-        x-threshold = <20>;
-        y-threshold = <20>;
-        track-remainders;
+    auto_mouse_layer: auto_mouse_layer {
+        compatible = "zmk,input-processor-temp-layer";
+        #input-processor-cells = <2>;
+        require-prior-idle-ms = <500>;
     };
 
     vtrackball_listener: vtrackball_listener {
         compatible = "zmk,input-listener";
         device = <&vtrackball>;
-        input-processors = <&zip_xy_scaler 2 1 &trackball_threshold &zip_temp_layer 6 750>;
+
+        move {
+            layers = <0 1 2 3 4 5>;
+            input-processors = <&zip_xy_scaler 2 1 &auto_mouse_layer 6 1000>;
+        };
 
         scroll_mode {
             layers = <1 4>;
