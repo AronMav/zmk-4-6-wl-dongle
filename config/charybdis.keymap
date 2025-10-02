@@ -82,6 +82,8 @@
         #input-processor-cells = <1>;
         type = <INPUT_EV_REL>;
         codes = <INPUT_REL_WHEEL INPUT_REL_HWHEEL>;
+        x-codes = <INPUT_REL_HWHEEL>;
+        y-codes = <INPUT_REL_WHEEL>;
     };
 
     trackball_wheel_scaler: trackball_wheel_scaler {
