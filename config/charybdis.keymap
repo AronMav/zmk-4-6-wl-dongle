@@ -71,10 +71,19 @@
         track-remainders;
     };
 
+    trackball_threshold: trackball_threshold {
+        compatible = "zmk,input-processor-threshold";
+        #input-processor-cells = <0>;
+        type = <INPUT_EV_REL>;
+        x-threshold = <20>;
+        y-threshold = <20>;
+        track-remainders;
+    };
+
     vtrackball_listener: vtrackball_listener {
         compatible = "zmk,input-listener";
         device = <&vtrackball>;
-        input-processors = <&zip_xy_scaler 2 1 &zip_temp_layer 6 750>;
+        input-processors = <&zip_xy_scaler 2 1 &trackball_threshold &zip_temp_layer 6 750>;
 
         scroll_mode {
             layers = <1 4>;
