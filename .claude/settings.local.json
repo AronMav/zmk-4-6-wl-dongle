@@ -8,7 +8,11 @@
       "Bash(git log:*)",
       "Bash(cat:*)",
       "Bash(west update:*)",
-      "Bash(rm:*)"
+      "Bash(rm:*)",
+      "Bash(git clone:*)",
+      "Read(//tmp/reference-repo/boards/shields/charybdis/**)",
+      "Read(//tmp/reference-repo/config/**)",
+      "Read(//c//**)"
     ],
     "deny": [],
     "ask": []
