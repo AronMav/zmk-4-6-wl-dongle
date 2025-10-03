@@ -64,15 +64,16 @@
             , <&key_physical_attrs 100 100  1200  312       0     0     0>
             , <&key_physical_attrs 100 100  1300  337       0     0     0>
             , <&key_physical_attrs 100 100  1400  337       0     0     0>
-            // Thumb cluster (with rotation)
-            , <&key_physical_attrs 100 100   355  417   12000     0     0>
-            , <&key_physical_attrs 100 100   298  452   30000   398   789>
-            , <&key_physical_attrs 100 100   398  452   30000   398   789>
-            , <&key_physical_attrs 100 100  1052  452 (-30000)  1102   789>
-            , <&key_physical_attrs 100 100  1107  447 (-20000)  1102   789>
-            , <&key_physical_attrs 100 100   298  552   30000   398   789>
-            , <&key_physical_attrs 100 100   398  552   30000   398   789>
-            , <&key_physical_attrs 100 100  1052  552 (-30000)  1102   789>
+            // Thumb cluster (with rotation) - order follows matrix transform
+            // Matrix: RC(4,3) RC(4,4) RC(4,1) RC(4,7) RC(4,9) | RC(4,5) RC(4,2) RC(4,11)
+            , <&key_physical_attrs 100 100   355  417   12000     0     0>      // RC(4,3) - JSON row:4 col:3
+            , <&key_physical_attrs 100 100   298  452   30000   398   789>      // RC(4,4) - JSON row:4 col:4
+            , <&key_physical_attrs 100 100   298  552   30000   398   789>      // RC(4,1) - JSON row:5 col:4
+            , <&key_physical_attrs 100 100  1052  452 (-30000)  1102   789>     // RC(4,7) - JSON row:4 col:7
+            , <&key_physical_attrs 100 100  1107  447 (-20000)  1102   789>     // RC(4,9) - JSON row:4 col:8
+            , <&key_physical_attrs 100 100   398  452   30000   398   789>      // RC(4,5) - JSON row:4 col:5
+            , <&key_physical_attrs 100 100   398  552   30000   398   789>      // RC(4,2) - JSON row:5 col:5
+            , <&key_physical_attrs 100 100  1052  552 (-30000)  1102   789>     // RC(4,11) - JSON row:5 col:7
             ;
 
         transform = <&default_transform>;
