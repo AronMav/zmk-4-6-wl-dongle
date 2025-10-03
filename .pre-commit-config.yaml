@@ -1,0 +1,44 @@
+fail_fast: false
+repos:
+  # Remove tabs from files
+  - repo: https://github.com/Lucas-C/pre-commit-hooks
+    rev: v1.5.1
+    hooks:
+    - id: remove-tabs
+      exclude: ".git/COMMIT_EDITMSG"
+
+  # Format C/C++ code (for ZMK firmware code)
+  - repo: https://github.com/pre-commit/mirrors-clang-format
+    rev: v18.1.8
+    hooks:
+    - id: clang-format
+      types_or: [c++, c]
+      args: ['-i']
+
+  # Format YAML/JSON/Markdown files
+  - repo: https://github.com/rbubley/mirrors-prettier
+    rev: v2.7.1
+    hooks:
+    - id: prettier
+      exclude: |
+        (?x)^(
+        CHANGELOG.md|
+        keymap-drawer/.*\.yaml
+        )$
+
+  # Lint commit messages
+  - repo: https://github.com/jorisroovers/gitlint
+    rev: v0.19.1
+    hooks:
+    - id: gitlint
+
+  # Basic file checks
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+    - id: trailing-whitespace
+    - id: check-yaml
+      exclude: "keymap-drawer/.*\\.yaml"
+    - id: check-added-large-files
+    - id: check-shebang-scripts-are-executable
+      exclude: "\\.mustache$"

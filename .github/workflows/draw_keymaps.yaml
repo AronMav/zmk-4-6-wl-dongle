@@ -203,11 +203,8 @@ jobs:
               draw_args=$(get_args "${{ inputs.draw_args }}" "$keyboard")
               echo "INFO:   got extra draw args: $draw_args"
 
-              json_path="${{ inputs.json_path }}"
-              if [ -f "$json_path/${keyboard}.json" ]; then
-                  echo "INFO:   found $json_path/${keyboard}.json";
-                  draw_args+=" -j $json_path/${keyboard}.json"
-              fi
+              # Note: Physical layout is now defined in config.yaml using dts_layout option
+              # This uses the devicetree format from boards/shields/charybdis/charybdis.dtsi
 
               keymap "${config_arg[@]}" parse -z "$keymap_file" $parse_args >"${{ inputs.output_folder }}/$keyboard.yaml" \
               && keymap "${config_arg[@]}" draw "${{ inputs.output_folder }}/$keyboard.yaml" $draw_args >"${{ inputs.output_folder }}/$keyboard.svg" \

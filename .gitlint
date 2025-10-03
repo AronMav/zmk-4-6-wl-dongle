@@ -1,0 +1,25 @@
+# Gitlint configuration for commit message linting
+# See https://jorisroovers.com/gitlint/ for documentation
+
+[general]
+# Ignore rules (comma-separated list of rule names or rule codes)
+ignore=body-is-missing
+
+# Enable contrib rules
+contrib=contrib-title-conventional-commits
+
+# Set the verbosity level
+verbosity=2
+
+[title-max-length]
+line-length=72
+
+[title-min-length]
+min-length=5
+
+[body-max-line-length]
+line-length=80
+
+[contrib-title-conventional-commits]
+# Specify allowed commit types
+types = build,chore,ci,docs,feat,fix,perf,refactor,revert,style,test
