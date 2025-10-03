@@ -68,11 +68,11 @@
             , <&key_physical_attrs 100 100   355  417   12000     0     0>
             , <&key_physical_attrs 100 100   298  452   30000   398   789>
             , <&key_physical_attrs 100 100   398  452   30000   398   789>
-            , <&key_physical_attrs 100 100  1052  452  -30000  1102   789>
-            , <&key_physical_attrs 100 100  1107  447  -20000  1102   789>
+            , <&key_physical_attrs 100 100  1052  452 (-30000)  1102   789>
+            , <&key_physical_attrs 100 100  1107  447 (-20000)  1102   789>
             , <&key_physical_attrs 100 100   298  552   30000   398   789>
             , <&key_physical_attrs 100 100   398  552   30000   398   789>
-            , <&key_physical_attrs 100 100  1052  552  -30000  1102   789>
+            , <&key_physical_attrs 100 100  1052  552 (-30000)  1102   789>
             ;
 
         transform = <&default_transform>;
