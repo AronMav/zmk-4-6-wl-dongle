@@ -15,7 +15,8 @@
       "Read(//c//**)",
       "Bash(keymap parse:*)",
       "Read(//tmp/reference-repo/.github/workflows/**)",
-      "Read(//tmp/reference-repo/keymap-drawer/**)"
+      "Read(//tmp/reference-repo/keymap-drawer/**)",
+      "Read(//c/tmp/**)"
     ],
     "deny": [],
     "ask": []
