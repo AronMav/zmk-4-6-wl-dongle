@@ -13,7 +13,9 @@
       "Read(//tmp/reference-repo/boards/shields/charybdis/**)",
       "Read(//tmp/reference-repo/config/**)",
       "Read(//c//**)",
-      "Bash(keymap parse:*)"
+      "Bash(keymap parse:*)",
+      "Read(//tmp/reference-repo/.github/workflows/**)",
+      "Read(//tmp/reference-repo/keymap-drawer/**)"
     ],
     "deny": [],
     "ask": []

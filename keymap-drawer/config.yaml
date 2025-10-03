@@ -53,10 +53,13 @@ parse_config:
     left_shift: Sft
     right_shift: Sft
     left_alt: Alt
-    right_alt: Alt
+    right_alt: AGr
     left_gui: Gui
     right_gui: Gui
+    keycode_combiner: "{mods}+ {key}"
+    mod_combiner: "{mod_1}+{mod_2}"
   zmk_combos:
     align_combos: top
     offset_x: 0
     offset_y: 0
+  zmk_preamble: "#define KEYMAP_DRAWER"
