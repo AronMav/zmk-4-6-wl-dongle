@@ -318,7 +318,7 @@
 
         BaseEn {
             label = "BaseEn";
-            display-name = "Base";
+            display-name = "Base EN";
             bindings = <
 &kp F1        &kp F2  &kp F3  &kp F4            &kp F5            &kp F6                &kp F7               &kp F8             &kp F9     &kp F10  &kp F11           &kp F12
 &kp TAB       &kp Q   &kp W   &kp E             &kp R             &kp T                 &kp Y                &kp U              &kp I      &kp O    &kp P             &kp GRAVE
@@ -331,7 +331,7 @@
 
         LowerEn {
             label = "LowerEn";
-            display-name = "Lower";
+            display-name = "Lower EN";
             bindings = <
 &kp F1  &kp F2               &kp F3          &kp F4          &kp F5           &kp F6          &kp F7           &kp F8  &kp F9  &kp F10  &kp F11        &kp F12
 &trans  &kp LC(PAUSE_BREAK)  &kp HOME        &kp UP_ARROW    &kp END          &kp CAPSLOCK    &kp PAGE_UP      &kp N7  &kp N8  &kp N9   &kp LC(SLASH)  &trans
@@ -344,7 +344,7 @@
 
         RaiseEn {
             label = "RaiseEn";
-            display-name = "Raise";
+            display-name = "Raise EN";
             bindings = <
 &trans           &trans            &trans            &kp LS(NUMBER_2)   &trans            &trans               &trans             &trans                &kp LS(NUMBER_5)      &trans                 &trans                 &studio_unlock
 &trans           &kp UNDERSCORE    &kp PLUS          &kp MINUS          &kp ASTERISK      &kp LS(SEMICOLON)    &trans             &kp LS(COMMA)         &kp LS(N6)            &kp LS(PERIOD)         &kp LS(SQT)            &kp SQT
@@ -357,7 +357,7 @@
 
         Base {
             label = "Base";
-            display-name = "Base";
+            display-name = "Base RU";
             bindings = <
 &kp F1        &kp F2  &kp F3  &kp F4            &kp F5            &kp F6                &kp F7               &kp F8             &kp F9     &kp F10  &kp F11           &kp F12
 &kp TAB       &kp Q   &kp W   &kp E             &kp R             &kp T                 &kp Y                &kp U              &kp I      &kp O    &kp P             &kp GRAVE
@@ -370,7 +370,7 @@
 
         Lower {
             label = "Lower";
-            display-name = "Lower";
+            display-name = "Lower RU";
             bindings = <
 &kp F1  &kp F2               &kp F3          &kp F4          &kp F5           &kp F6          &kp F7           &kp F8  &kp F9  &kp F10  &kp F11        &kp F12
 &trans  &kp LC(PAUSE_BREAK)  &kp HOME        &kp UP_ARROW    &kp END          &kp CAPSLOCK    &kp PAGE_UP      &kp N7  &kp N8  &kp N9   &kp LC(SLASH)  &trans
@@ -383,7 +383,7 @@
 
         Raise {
             label = "Raise";
-            display-name = "Raise";
+            display-name = "Raise RU";
             bindings = <
 &trans           &trans            &trans         &DogSymbolRu     &trans                    &trans              &trans             &trans                &kp LS(NUMBER_5)      &trans                 &trans                 &trans
 &trans           &kp UNDERSCORE    &kp PLUS       &kp MINUS        &kp ASTERISK              &kp LS(NUMBER_6)    &trans             &SignIsSmallerRu      &CarriagesRu          &SignIsBigRu           &kp LS(NUMBER_2)       &ApostropheRu
