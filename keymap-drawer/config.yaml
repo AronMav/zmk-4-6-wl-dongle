@@ -1,7 +1,3 @@
-layout:
-  dts_layout: ../boards/shields/charybdis/charybdis.dtsi
-  layout_name: charybdis_layout
-
 draw_config:
   key_w: 60
   key_h: 56
