@@ -58,8 +58,5 @@ parse_config:
     right_gui: Gui
     keycode_combiner: "{mods}+ {key}"
     mod_combiner: "{mod_1}+{mod_2}"
-  zmk_combos:
-    align_combos: top
-    offset_x: 0
-    offset_y: 0
+  zmk_combos: {}
   zmk_preamble: "#define KEYMAP_DRAWER"
