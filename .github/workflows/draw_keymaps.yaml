@@ -39,8 +39,8 @@ jobs:
           for keymap_file in config/*.keymap; do
             keyboard=$(basename "$keymap_file" .keymap)
             echo "Processing $keyboard..."
-            keymap parse -c keymap-drawer/config.yaml -z "$keymap_file" > "keymap-drawer/$keyboard.yaml"
-            keymap draw -c keymap-drawer/config.yaml "keymap-drawer/$keyboard.yaml" > "keymap-drawer/$keyboard.svg"
+            keymap parse --config keymap-drawer/config.yaml -z "$keymap_file" > "keymap-drawer/$keyboard.yaml"
+            keymap draw --config keymap-drawer/config.yaml "keymap-drawer/$keyboard.yaml" > "keymap-drawer/$keyboard.svg"
           done
 
       - name: Commit updated images
