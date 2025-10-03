@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: charybdis}
 layers:
-  Base:
+  Base EN:
   - F1
   - F2
   - F3
@@ -50,14 +50,14 @@ layers:
   - ''''
   - RIGHT CONTROL
   - LEFT CONTROL
-  - Lower
+  - Lower EN
   - LEFT GUI
   - RIGHT SHIFT
-  - Raise
+  - Raise EN
   - RIGHT SHIFT
   - SPACE
   - BSPC
-  Lower:
+  Lower EN:
   - F1
   - F2
   - F3
@@ -114,7 +114,178 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  Raise:
+  Raise EN:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Sft+ 2
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Sft+ 5
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ZMK Studio
+  - {t: ▽, type: trans}
+  - _
+  - +
+  - '-'
+  - '*'
+  - Sft+ ;
+  - {t: ▽, type: trans}
+  - Sft+ ,
+  - Sft+ 6
+  - Sft+ .
+  - Sft+ '
+  - ''''
+  - '!'
+  - Sft+ 7
+  - Sft+ 4
+  - '='
+  - Sft+ 3
+  - ;
+  - {t: ▽, type: trans}
+  - '['
+  - ','
+  - .
+  - ']'
+  - Sft+ /
+  - {t: ▽, type: trans}
+  - '#'
+  - \
+  - Sft+ \
+  - /
+  - {t: ▽, type: trans}
+  - RU
+  - Sft+ [
+  - (
+  - )
+  - Sft+ ]
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Base RU:
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - DEV TOOLS
+  - TAB
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - '`'
+  - LEFT ALT
+  - A
+  - S
+  - D
+  - {t: F, h: LEFT SHIFT}
+  - G
+  - H
+  - {t: J, h: RIGHT SHIFT}
+  - K
+  - L
+  - ;
+  - ENTER
+  - ESC
+  - Z
+  - X
+  - C
+  - V
+  - {t: B, h: '['}
+  - {t: N, h: ']'}
+  - M
+  - ','
+  - .
+  - ''''
+  - RIGHT CONTROL
+  - LEFT CONTROL
+  - Lower RU
+  - LEFT GUI
+  - RIGHT SHIFT
+  - Raise RU
+  - RIGHT SHIFT
+  - SPACE
+  - BSPC
+  Lower RU:
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - DEV TOOLS
+  - {t: ▽, type: trans}
+  - Ctl+ PAUSE BREAK
+  - HOME
+  - UP ARROW
+  - END
+  - CAPSLOCK
+  - PAGE UP
+  - '7'
+  - '8'
+  - '9'
+  - Ctl+ /
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LEFT
+  - DOWN ARROW
+  - RIGHT
+  - {t: ▽, type: trans}
+  - PAGE DOWN
+  - '4'
+  - '5'
+  - '6'
+  - C-A-E
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Ctl+ LEFT
+  - {t: ▽, type: trans}
+  - Ctl+ RIGHT
+  - DELETE
+  - PRINT SCREEN
+  - '1'
+  - '2'
+  - '3'
+  - '0'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Raise RU:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -353,10 +524,10 @@ combos:
   k: RESET
 - p: [25, 26]
   k: EN
-  l: [Base, Lower, Raise]
+  l: [Base RU, Lower RU, Raise RU]
 - p: [25, 26]
   k: RU
-  l: [Base, Lower, Raise]
+  l: [Base EN, Lower EN, Raise EN]
 - p: [1, 13]
   k: {t: BT, h: '0'}
 - p: [2, 14]
