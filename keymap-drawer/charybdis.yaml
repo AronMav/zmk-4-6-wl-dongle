@@ -52,9 +52,9 @@ layers:
   - LEFT CONTROL
   - Lower EN
   - LEFT GUI
-  - RIGHT SHIFT
+  - '&td_shift_lang'
   - Raise EN
-  - RIGHT SHIFT
+  - '&td_shift_lang'
   - SPACE
   - BSPC
   Lower EN:
@@ -223,9 +223,9 @@ layers:
   - LEFT CONTROL
   - Lower RU
   - LEFT GUI
-  - RIGHT SHIFT
+  - '&td_shift_lang'
   - Raise RU
-  - RIGHT SHIFT
+  - '&td_shift_lang'
   - SPACE
   - BSPC
   Lower RU:
