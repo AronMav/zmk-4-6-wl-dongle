@@ -536,3 +536,5 @@ combos:
   k: {t: BT, h: '2'}
 - p: [4, 16]
   k: BT CLR
+- p: [0, 4]
+  k: ZMK Studio

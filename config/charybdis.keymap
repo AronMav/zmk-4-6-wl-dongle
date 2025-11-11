@@ -60,6 +60,11 @@
             bindings = <&bt BT_CLR>;
             key-positions = <4 16>;
         };
+
+        studioUnlock {
+            bindings = <&studio_unlock>;
+            key-positions = <0 4>;
+        };
     };
 
     behaviors {
