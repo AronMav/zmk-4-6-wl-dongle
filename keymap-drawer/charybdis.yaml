@@ -42,8 +42,8 @@ layers:
   - X
   - C
   - V
-  - {t: B, h: '['}
-  - {t: N, h: ']'}
+  - '&td_b_bracket'
+  - '&td_n_bracket'
   - M
   - ','
   - .
@@ -213,8 +213,8 @@ layers:
   - X
   - C
   - V
-  - {t: B, h: '['}
-  - {t: N, h: ']'}
+  - '&td_b_bracket'
+  - '&td_n_bracket'
   - M
   - ','
   - .
