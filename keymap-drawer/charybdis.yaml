@@ -428,3 +428,9 @@ combos:
   k: BT CLR
 - p: [0, 4]
   k: ZMK Studio
+- p: [27, 28]
+  k: '['
+  l: [Base RU, Lower RU, Raise RU]
+- p: [31, 32]
+  k: ']'
+  l: [Base RU, Lower RU, Raise RU]
