@@ -87,8 +87,8 @@
     };
 
     macros {
-        default-wait-ms = <10>;
-        default-tap-ms = <10>;
+        default-wait-ms = <30>;
+        default-tap-ms = <20>;
 
         ControlAltY: ControlAltY {
             compatible = "zmk,behavior-macro";
@@ -109,11 +109,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>,
+                <&kp LG(SPACE)>,
                 <&macro_tap>,
                 <&kp LS(NUMBER_2)>,
                 <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>;
+                <&kp LG(SPACE)>;
 
             label = "DogSymbolRu";
         };
@@ -123,11 +123,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>,
+                <&kp LG(SPACE)>,
                 <&macro_tap>,
                 <&kp LS(NUMBER_4)>,
                 <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>;
+                <&kp LG(SPACE)>;
 
             label = "DollarRu";
         };
@@ -137,11 +137,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>,
+                <&kp LG(SPACE)>,
                 <&macro_tap>,
                 <&kp LS(NUMBER_3)>,
                 <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>;
+                <&kp LG(SPACE)>;
 
             label = "SharpRu";
         };
@@ -151,11 +151,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>,
+                <&kp LG(SPACE)>,
                 <&macro_tap>,
                 <&kp LS(BACKSLASH)>,
                 <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>;
+                <&kp LG(SPACE)>;
 
             label = "VerticalLineRu";
         };
@@ -165,11 +165,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>,
+                <&kp LG(SPACE)>,
                 <&macro_tap>,
                 <&kp LS(NUMBER_7)>,
                 <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>;
+                <&kp LG(SPACE)>;
 
             label = "AmpersandRu";
         };
@@ -179,11 +179,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>,
+                <&kp LG(SPACE)>,
                 <&macro_tap>,
                 <&kp LS(NUMBER_3)>,
                 <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>;
+                <&kp LG(SPACE)>;
 
             label = "NumberEn";
         };
@@ -193,11 +193,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>,
+                <&kp LG(SPACE)>,
                 <&macro_tap>,
                 <&kp LS(COMMA)>,
                 <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>;
+                <&kp LG(SPACE)>;
 
             label = "SignIsSmallerRu";
         };
@@ -207,11 +207,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>,
+                <&kp LG(SPACE)>,
                 <&macro_tap>,
                 <&kp LS(NUMBER_6)>,
                 <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>;
+                <&kp LG(SPACE)>;
 
             label = "CarriagesRu";
         };
@@ -221,11 +221,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>,
+                <&kp LG(SPACE)>,
                 <&macro_tap>,
                 <&kp LS(PERIOD)>,
                 <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>;
+                <&kp LG(SPACE)>;
 
             label = "SignIsBigRu";
         };
@@ -235,11 +235,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>,
+                <&kp LG(SPACE)>,
                 <&macro_tap>,
                 <&kp LEFT_BRACKET>,
                 <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>;
+                <&kp LG(SPACE)>;
 
             label = "LeftSquareBracketRu";
         };
@@ -249,11 +249,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>,
+                <&kp LG(SPACE)>,
                 <&macro_tap>,
                 <&kp RIGHT_BRACKET>,
                 <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>;
+                <&kp LG(SPACE)>;
 
             label = "RightSquareBracketRu";
         };
@@ -263,11 +263,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>,
+                <&kp LG(SPACE)>,
                 <&macro_tap>,
                 <&kp SQT>,
                 <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>;
+                <&kp LG(SPACE)>;
 
             label = "ApostropheRu";
         };
@@ -277,11 +277,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>,
+                <&kp LG(SPACE)>,
                 <&macro_tap>,
                 <&kp LS(LEFT_BRACKET)>,
                 <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>;
+                <&kp LG(SPACE)>;
 
             label = "LeftCurlyBraceRu";
         };
@@ -291,11 +291,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>,
+                <&kp LG(SPACE)>,
                 <&macro_tap>,
                 <&kp LS(RIGHT_BRACKET)>,
                 <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>;
+                <&kp LG(SPACE)>;
 
             label = "RightCurlyBraceRu";
         };
@@ -305,7 +305,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>,
+                <&kp LG(SPACE)>,
                 <&macro_tap>,
                 <&to 0>;
 
@@ -317,7 +317,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>,
+                <&kp LG(SPACE)>,
                 <&macro_tap>,
                 <&to 3>;
 
@@ -329,7 +329,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp LA(LEFT_SHIFT)>,
+                <&kp LG(SPACE)>,
                 <&macro_tap>,
                 <&tog 3>;
 
@@ -346,8 +346,8 @@
             bindings = <
 &kp F1            &kp F2     &kp F3        &kp F4           &kp F5            &kp F6                &kp F7               &kp F8             &kp F9     &kp F10  &kp F11           &kp F12
 &kp TAB           &kp Q      &kp W         &kp E            &kp R             &kp T                 &kp Y                &kp U              &kp I      &kp O    &kp P             &kp GRAVE
-&kp LEFT_ALT      &kp A      &kp S         &kp D            &mt LEFT_SHIFT F  &kp G                 &kp H                &mt RIGHT_SHIFT J  &kp K      &kp L    &kp SEMI          &kp ENTER
-&kp ESC       &kp Z   &kp X   &kp C             &kp V             &mt LEFT_BRACKET B    &mt RIGHT_BRACKET N  &kp M              &kp COMMA  &kp DOT  &kp SINGLE_QUOTE  &kp RIGHT_CONTROL
+&kp LEFT_ALT      &kp A      &kp S         &kp D            &kp F  &kp G                 &kp H                &kp J  &kp K      &kp L    &kp SEMI          &kp ENTER
+&kp ESC       &kp Z   &kp X   &kp C             &kp V             &kp B    &kp N  &kp M              &kp COMMA  &kp DOT  &kp SINGLE_QUOTE  &kp RIGHT_CONTROL
                               &kp LEFT_CONTROL  &mo 1             &kp LEFT_GUI          &td_shift_lang       &mo 2
                                                 &td_shift_lang    &kp SPACE             &kp BSPC
             >;
@@ -385,8 +385,8 @@
             bindings = <
 &kp F1            &kp F2     &kp F3        &kp F4           &kp F5            &kp F6                &kp F7               &kp F8             &kp F9     &kp F10  &kp F11           &kp F12
 &kp TAB           &kp Q      &kp W         &kp E            &kp R             &kp T                 &kp Y                &kp U              &kp I      &kp O    &kp P             &kp GRAVE
-&kp LEFT_ALT      &kp A      &kp S         &kp D            &mt LEFT_SHIFT F  &kp G                 &kp H                &mt RIGHT_SHIFT J  &kp K      &kp L    &kp SEMI          &kp ENTER
-&kp ESC       &kp Z   &kp X   &kp C             &kp V             &mt LEFT_BRACKET B    &mt RIGHT_BRACKET N  &kp M              &kp COMMA  &kp DOT  &kp SINGLE_QUOTE  &kp RIGHT_CONTROL
+&kp LEFT_ALT      &kp A      &kp S         &kp D            &kp F  &kp G                 &kp H                &kp J  &kp K      &kp L    &kp SEMI          &kp ENTER
+&kp ESC       &kp Z   &kp X   &kp C             &kp V             &kp B    &kp N  &kp M              &kp COMMA  &kp DOT  &kp SINGLE_QUOTE  &kp RIGHT_CONTROL
                               &kp LEFT_CONTROL  &mo 4             &kp LEFT_GUI          &td_shift_lang       &mo 5
                                                 &td_shift_lang    &kp SPACE             &kp BSPC
             >;
