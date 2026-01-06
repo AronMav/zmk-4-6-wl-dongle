@@ -1,62 +1,7 @@
 layout: {zmk_keyboard: charybdis}
 layers:
-  Base EN:
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
-  - DEV TOOLS
-  - TAB
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - '`'
-  - LEFT ALT
-  - A
-  - S
-  - D
-  - {t: F, h: LEFT SHIFT}
-  - G
-  - H
-  - {t: J, h: RIGHT SHIFT}
-  - K
-  - L
-  - ;
-  - ENTER
-  - ESC
-  - Z
-  - X
-  - C
-  - V
-  - {t: B, h: '['}
-  - {t: N, h: ']'}
-  - M
-  - ','
-  - .
-  - ''''
-  - RIGHT CONTROL
-  - LEFT CONTROL
-  - Lower EN
-  - LEFT GUI
-  - '&td_shift_lang'
-  - Raise EN
-  - '&td_shift_lang'
-  - SPACE
-  - BSPC
+  Base EN: [F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, DEV TOOLS, TAB, Q, W, E, R, T, Y, U, I, O, P, '`', LEFT ALT, A, S, D, F, G, H, J, K, L, ;, ENTER, ESC, Z,
+    X, C, V, B, N, M, ',', ., '''', RIGHT CONTROL, LEFT CONTROL, Lower EN, LEFT GUI, '&td_shift_lang', Raise EN, '&td_shift_lang', SPACE, BSPC]
   Lower EN:
   - F1
   - F2
@@ -171,63 +116,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  Base RU:
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
-  - DEV TOOLS
-  - TAB
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - '`'
-  - LEFT ALT
-  - A
-  - S
-  - D
-  - {t: F, h: LEFT SHIFT}
-  - G
-  - H
-  - {t: J, h: RIGHT SHIFT}
-  - K
-  - L
-  - ;
-  - ENTER
-  - ESC
-  - Z
-  - X
-  - C
-  - V
-  - {t: B, h: '['}
-  - {t: N, h: ']'}
-  - M
-  - ','
-  - .
-  - ''''
-  - RIGHT CONTROL
-  - LEFT CONTROL
-  - Lower RU
-  - LEFT GUI
-  - '&td_shift_lang'
-  - Raise RU
-  - '&td_shift_lang'
-  - SPACE
-  - BSPC
+  Base RU: [F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, DEV TOOLS, TAB, Q, W, E, R, T, Y, U, I, O, P, '`', LEFT ALT, A, S, D, F, G, H, J, K, L, ;, ENTER, ESC, Z,
+    X, C, V, B, N, M, ',', ., '''', RIGHT CONTROL, LEFT CONTROL, Lower RU, LEFT GUI, '&td_shift_lang', Raise RU, '&td_shift_lang', SPACE, BSPC]
   Lower RU:
   - F1
   - F2
@@ -538,3 +428,9 @@ combos:
   k: BT CLR
 - p: [0, 4]
   k: ZMK Studio
+- p: [27, 28]
+  k: '['
+  l: [Base RU, Lower RU, Raise RU]
+- p: [31, 32]
+  k: ']'
+  l: [Base RU, Lower RU, Raise RU]
