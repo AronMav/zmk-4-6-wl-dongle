@@ -29,22 +29,6 @@
             key-positions = <11 23>;
         };
 
-        switchToEn {
-            bindings = <&SwitchEnLanguage>;
-            key-positions = <25 26>;
-            layers = <3 4 5>;
-            timeout-ms = <50>;
-            require-prior-idle-ms = <100>;
-        };
-
-        switchToRu {
-            bindings = <&SwitchRuLanguage>;
-            key-positions = <25 26>;
-            layers = <0 1 2>;
-            timeout-ms = <50>;
-            require-prior-idle-ms = <100>;
-        };
-
         btProfile0 {
             bindings = <&bt BT_SEL 0>;
             key-positions = <1 13>;
