@@ -1,7 +1,62 @@
 layout: {zmk_keyboard: charybdis}
 layers:
-  Base EN: [F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, DEV TOOLS, TAB, Q, W, E, R, T, Y, U, I, O, P, '`', LEFT ALT, A, S, D, F, G, H, J, K, L, ;, ENTER, ESC, Z,
-    X, C, V, B, N, M, ',', ., '''', RIGHT CONTROL, LEFT CONTROL, Lower EN, LEFT GUI, '&td_shift_caps', Raise EN, '&td_shift_caps', SPACE, BSPC]
+  Base EN:
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - DEV TOOLS
+  - TAB
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - '`'
+  - {t: LEFT ALT, h: Sniper}
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - ENTER
+  - ESC
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - ''''
+  - RIGHT CONTROL
+  - LEFT CONTROL
+  - Lower EN
+  - LEFT GUI
+  - '&td_shift_caps'
+  - Raise EN
+  - '&td_shift_caps'
+  - SPACE
+  - BSPC
   Lower EN:
   - F1
   - F2
@@ -116,8 +171,63 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  Base RU: [F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, DEV TOOLS, TAB, Q, W, E, R, T, Y, U, I, O, P, '`', LEFT ALT, A, S, D, F, G, H, J, K, L, ;, ENTER, ESC, Z,
-    X, C, V, B, N, M, ',', ., '''', RIGHT CONTROL, LEFT CONTROL, Lower RU, LEFT GUI, '&td_shift_caps', Raise RU, '&td_shift_caps', SPACE, BSPC]
+  Base RU:
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - DEV TOOLS
+  - TAB
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - '`'
+  - {t: LEFT ALT, h: Sniper}
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - ENTER
+  - ESC
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - ''''
+  - RIGHT CONTROL
+  - LEFT CONTROL
+  - Lower RU
+  - LEFT GUI
+  - '&td_shift_caps'
+  - Raise RU
+  - '&td_shift_caps'
+  - SPACE
+  - BSPC
   Lower RU:
   - F1
   - F2
@@ -343,6 +453,63 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Sniper:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - L CLK
+  - M CLK
+  - R CLK
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - BACK
+  - FWD
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - L CLK
+  - {t: ▽, type: trans}
+  - R CLK
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

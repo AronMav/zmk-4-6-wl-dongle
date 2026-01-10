@@ -3,6 +3,7 @@
 
 #define DEF 0
 #define MOUSE 6
+#define SNIPER 8
 
 / {
   split_inputs {
@@ -23,6 +24,11 @@
     scroll {
       layers = <1 4>;
       input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_scaler 1 3>, <&zip_xy_to_scroll_mapper>;
+    };
+
+    sniper {
+      layers = <SNIPER>;
+      input-processors = <&zip_xy_scaler 1 3>;  // 0.33x speed for precision
     };
 
     move {
