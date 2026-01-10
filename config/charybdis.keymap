@@ -12,21 +12,29 @@
         bootloaderLeft {
             bindings = <&bootloader>;
             key-positions = <0 13>;
+            require-prior-idle-ms = <2000>;
+            timeout-ms = <30>;
         };
 
         bootloaderRight {
             bindings = <&bootloader>;
             key-positions = <11 22>;
+            require-prior-idle-ms = <2000>;
+            timeout-ms = <30>;
         };
 
         resetLeft {
             bindings = <&sys_reset>;
             key-positions = <0 12>;
+            require-prior-idle-ms = <2000>;
+            timeout-ms = <30>;
         };
 
         resetRight {
             bindings = <&sys_reset>;
             key-positions = <11 23>;
+            require-prior-idle-ms = <2000>;
+            timeout-ms = <30>;
         };
 
         btProfile0 {
@@ -52,6 +60,8 @@
         studioUnlock {
             bindings = <&studio_unlock>;
             key-positions = <0 4>;
+            require-prior-idle-ms = <1000>;
+            timeout-ms = <50>;
         };
 
         // х (LEFT_BRACKET in Russian layout)
@@ -344,6 +354,22 @@
         };
     };
 
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        // EN: Lower + Raise = Media
+        tri_layer_en {
+            if-layers = <1 2>;
+            then-layer = <7>;
+        };
+
+        // RU: Lower + Raise = Media
+        tri_layer_ru {
+            if-layers = <4 5>;
+            then-layer = <7>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -446,18 +472,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans            &trans             &trans           &trans        &trans        &trans
                         &trans  &trans  &trans    &trans            &trans
                                 &trans  &trans    &trans
-            >;
-        };
-
-        extra2 {
-            display-name = "Function";
-            bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                                        &trans        &trans        &trans          &trans  &trans
-                                                      &trans        &trans          &trans
             >;
         };
     };
