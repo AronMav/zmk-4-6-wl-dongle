@@ -132,7 +132,6 @@
                 <&macro_release>,
                 <&kp LEFT_CONTROL &kp LALT>;
 
-            label = "ControlAltY";
         };
 
         DogSymbolRu: DogSymbolRu {
@@ -146,7 +145,6 @@
                 <&macro_tap>,
                 <&kp LG(SPACE)>;
 
-            label = "DogSymbolRu";
         };
 
         DollarRu: DollarRu {
@@ -160,7 +158,6 @@
                 <&macro_tap>,
                 <&kp LG(SPACE)>;
 
-            label = "DollarRu";
         };
 
         SharpRu: SharpRu {
@@ -174,7 +171,6 @@
                 <&macro_tap>,
                 <&kp LG(SPACE)>;
 
-            label = "SharpRu";
         };
 
         VerticalLineRu: VerticalLineRu {
@@ -188,7 +184,6 @@
                 <&macro_tap>,
                 <&kp LG(SPACE)>;
 
-            label = "VerticalLineRu";
         };
 
         AmpersandRu: AmpersandRu {
@@ -202,7 +197,6 @@
                 <&macro_tap>,
                 <&kp LG(SPACE)>;
 
-            label = "AmpersandRu";
         };
 
         NumberEn: NumberEn {
@@ -216,7 +210,6 @@
                 <&macro_tap>,
                 <&kp LG(SPACE)>;
 
-            label = "NumberEn";
         };
 
         SignIsSmallerRu: SignIsSmallerRu {
@@ -230,7 +223,6 @@
                 <&macro_tap>,
                 <&kp LG(SPACE)>;
 
-            label = "SignIsSmallerRu";
         };
 
         CarriagesRu: CarriagesRu {
@@ -244,7 +236,6 @@
                 <&macro_tap>,
                 <&kp LG(SPACE)>;
 
-            label = "CarriagesRu";
         };
 
         SignIsBigRu: SignIsBigRu {
@@ -258,7 +249,6 @@
                 <&macro_tap>,
                 <&kp LG(SPACE)>;
 
-            label = "SignIsBigRu";
         };
 
         LeftSquareBracketRu: LeftSquareBracketRu {
@@ -272,7 +262,6 @@
                 <&macro_tap>,
                 <&kp LG(SPACE)>;
 
-            label = "LeftSquareBracketRu";
         };
 
         RightSquareBracketRu: RightSquareBracketRu {
@@ -286,7 +275,6 @@
                 <&macro_tap>,
                 <&kp LG(SPACE)>;
 
-            label = "RightSquareBracketRu";
         };
 
         ApostropheRu: ApostropheRu {
@@ -300,7 +288,6 @@
                 <&macro_tap>,
                 <&kp LG(SPACE)>;
 
-            label = "ApostropheRu";
         };
 
         LeftCurlyBraceRu: LeftCurlyBraceRu {
@@ -314,7 +301,6 @@
                 <&macro_tap>,
                 <&kp LG(SPACE)>;
 
-            label = "LeftCurlyBraceRu";
         };
 
         RightCurlyBraceRu: RightCurlyBraceRu {
@@ -328,7 +314,6 @@
                 <&macro_tap>,
                 <&kp LG(SPACE)>;
 
-            label = "RightCurlyBraceRu";
         };
 
         SwitchEnLanguage: SwitchEnLanguage {
@@ -336,7 +321,6 @@
             #binding-cells = <0>;
             bindings = <&macro_tap>, <&kp LG(SPACE)>, <&macro_tap>, <&to 0>;
 
-            label = "SwitchEnLanguage";
         };
 
         SwitchRuLanguage: SwitchRuLanguage {
@@ -344,7 +328,6 @@
             #binding-cells = <0>;
             bindings = <&macro_tap>, <&kp LG(SPACE)>, <&macro_tap>, <&to 3>;
 
-            label = "SwitchRuLanguage";
         };
 
         toggle_lang_layer: toggle_lang_layer {
@@ -352,7 +335,6 @@
             #binding-cells = <0>;
             bindings = <&macro_tap>, <&kp LG(SPACE)>, <&macro_tap>, <&tog 3>;
 
-            label = "toggle_lang_layer";
         };
     };
 
@@ -378,7 +360,6 @@
         compatible = "zmk,keymap";
 
         BaseEn {
-            label = "BaseEn";
             display-name = "Base EN";
             bindings = <
 &kp F1        &kp F2  &kp F3  &kp F4            &kp F5          &kp F6          &kp F7          &kp F8  &kp F9     &kp F10  &kp F11           &kp F12
@@ -391,7 +372,6 @@
         };
 
         LowerEn {
-            label = "LowerEn";
             display-name = "Lower EN";
             bindings = <
 &kp F1  &kp F2               &kp F3          &kp F4          &kp F5           &kp F6          &kp F7           &kp F8  &kp F9  &kp F10  &kp F11        &kp F12
@@ -404,7 +384,6 @@
         };
 
         RaiseEn {
-            label = "RaiseEn";
             display-name = "Raise EN";
             bindings = <
 &trans           &trans            &trans            &kp LS(NUMBER_2)   &trans            &trans               &trans             &trans                &kp LS(NUMBER_5)      &trans                 &trans                 &studio_unlock
@@ -417,7 +396,6 @@
         };
 
         Base {
-            label = "Base";
             display-name = "Base RU";
             bindings = <
 &kp F1                  &kp F2  &kp F3  &kp F4            &kp F5          &kp F6          &kp F7          &kp F8  &kp F9     &kp F10  &kp F11           &kp F12
@@ -430,7 +408,6 @@
         };
 
         Lower {
-            label = "Lower";
             display-name = "Lower RU";
             bindings = <
 &kp F1  &kp F2               &kp F3          &kp F4          &kp F5           &kp F6          &kp F7           &kp F8  &kp F9  &kp F10  &kp F11        &kp F12
@@ -443,7 +420,6 @@
         };
 
         Raise {
-            label = "Raise";
             display-name = "Raise RU";
             bindings = <
 &trans           &trans            &trans         &DogSymbolRu     &trans                    &trans              &trans             &trans                &kp LS(NUMBER_5)      &trans                 &trans                 &trans
