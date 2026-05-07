@@ -65,6 +65,7 @@
         };
 
         // х (LEFT_BRACKET in Russian layout)
+
         ruKha {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <27 28>;
@@ -74,6 +75,7 @@
         };
 
         // ъ (RIGHT_BRACKET in Russian layout)
+
         ruHardSign {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <31 32>;
@@ -95,6 +97,7 @@
         };
 
         // Double-tap Shift = Caps Word (caps lock на 1 слово)
+
         td_shift_caps: tap_dance_shift_caps {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
@@ -103,6 +106,7 @@
         };
 
         // Alt + Sniper: tap = Alt, hold = Sniper layer
+
         alt_sniper: alt_sniper {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -330,11 +334,7 @@
         SwitchEnLanguage: SwitchEnLanguage {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_tap>,
-                <&kp LG(SPACE)>,
-                <&macro_tap>,
-                <&to 0>;
+            bindings = <&macro_tap>, <&kp LG(SPACE)>, <&macro_tap>, <&to 0>;
 
             label = "SwitchEnLanguage";
         };
@@ -342,11 +342,7 @@
         SwitchRuLanguage: SwitchRuLanguage {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_tap>,
-                <&kp LG(SPACE)>,
-                <&macro_tap>,
-                <&to 3>;
+            bindings = <&macro_tap>, <&kp LG(SPACE)>, <&macro_tap>, <&to 3>;
 
             label = "SwitchRuLanguage";
         };
@@ -354,11 +350,7 @@
         toggle_lang_layer: toggle_lang_layer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_tap>,
-                <&kp LG(SPACE)>,
-                <&macro_tap>,
-                <&tog 3>;
+            bindings = <&macro_tap>, <&kp LG(SPACE)>, <&macro_tap>, <&tog 3>;
 
             label = "toggle_lang_layer";
         };
@@ -368,12 +360,14 @@
         compatible = "zmk,conditional-layers";
 
         // EN: Lower + Raise = Media
+
         tri_layer_en {
             if-layers = <1 2>;
             then-layer = <7>;
         };
 
         // RU: Lower + Raise = Media
+
         tri_layer_ru {
             if-layers = <4 5>;
             then-layer = <7>;
@@ -387,12 +381,12 @@
             label = "BaseEn";
             display-name = "Base EN";
             bindings = <
-&kp F1            &kp F2     &kp F3        &kp F4           &kp F5            &kp F6                &kp F7               &kp F8             &kp F9     &kp F10  &kp F11           &kp F12
-&kp TAB           &kp Q      &kp W         &kp E            &kp R             &kp T                 &kp Y                &kp U              &kp I      &kp O    &kp P             &kp GRAVE
-&alt_sniper 8 LEFT_ALT  &kp A      &kp S         &kp D            &kp F  &kp G                 &kp H                &kp J  &kp K      &kp L    &kp SEMI          &kp ENTER
-&kp ESC       &kp Z   &kp X   &kp C             &kp V             &kp B    &kp N  &kp M              &kp COMMA  &kp DOT  &kp SINGLE_QUOTE  &kp RIGHT_CONTROL
-                              &kp LEFT_CONTROL  &mo 1             &kp LEFT_GUI          &td_shift_caps       &mo 2
-                                                &td_shift_caps    &kp SPACE             &kp BSPC
+&kp F1        &kp F2  &kp F3  &kp F4            &kp F5          &kp F6          &kp F7          &kp F8  &kp F9     &kp F10  &kp F11           &kp F12
+&kp TAB       &kp Q   &kp W   &kp E             &kp R           &kp T           &kp Y           &kp U   &kp I      &kp O    &kp P             &kp GRAVE
+&kp LEFT_ALT  &kp A   &kp S   &kp D             &kp F           &kp G           &kp H           &kp J   &kp K      &kp L    &kp SEMI          &kp ENTER
+&kp ESC       &kp Z   &kp X   &kp C             &kp V           &kp B           &kp N           &kp M   &kp COMMA  &kp DOT  &kp SINGLE_QUOTE  &kp RIGHT_CONTROL
+                              &kp LEFT_CONTROL  &mo 1           &kp LEFT_GUI    &td_shift_caps  &mo 2
+                                                &td_shift_caps  &kp SPACE       &kp BSPC
             >;
         };
 
@@ -426,12 +420,12 @@
             label = "Base";
             display-name = "Base RU";
             bindings = <
-&kp F1            &kp F2     &kp F3        &kp F4           &kp F5            &kp F6                &kp F7               &kp F8             &kp F9     &kp F10  &kp F11           &kp F12
-&kp TAB           &kp Q      &kp W         &kp E            &kp R             &kp T                 &kp Y                &kp U              &kp I      &kp O    &kp P             &kp GRAVE
-&alt_sniper 8 LEFT_ALT  &kp A      &kp S         &kp D            &kp F  &kp G                 &kp H                &kp J  &kp K      &kp L    &kp SEMI          &kp ENTER
-&kp ESC       &kp Z   &kp X   &kp C             &kp V             &kp B    &kp N  &kp M              &kp COMMA  &kp DOT  &kp SINGLE_QUOTE  &kp RIGHT_CONTROL
-                              &kp LEFT_CONTROL  &mo 4             &kp LEFT_GUI          &td_shift_caps       &mo 5
-                                                &td_shift_caps    &kp SPACE             &kp BSPC
+&kp F1                  &kp F2  &kp F3  &kp F4            &kp F5          &kp F6          &kp F7          &kp F8  &kp F9     &kp F10  &kp F11           &kp F12
+&kp TAB                 &kp Q   &kp W   &kp E             &kp R           &kp T           &kp Y           &kp U   &kp I      &kp O    &kp P             &kp GRAVE
+&alt_sniper 8 LEFT_ALT  &kp A   &kp S   &kp D             &kp F           &kp G           &kp H           &kp J   &kp K      &kp L    &kp SEMI          &kp ENTER
+&kp ESC                 &kp Z   &kp X   &kp C             &kp V           &kp B           &kp N           &kp M   &kp COMMA  &kp DOT  &kp SINGLE_QUOTE  &kp RIGHT_CONTROL
+                                        &kp LEFT_CONTROL  &mo 4           &kp LEFT_GUI    &td_shift_caps  &mo 5
+                                                          &td_shift_caps  &kp SPACE       &kp BSPC
             >;
         };
 
@@ -464,12 +458,12 @@
         Mouse {
             display-name = "Mouse";
             bindings = <
-&trans     &trans  &trans     &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &trans  &mkp MB4   &mkp MB5   &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &trans  &trans     &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                              &mkp LCLK  &trans     &mkp RCLK &trans  &trans
-                                         &trans     &trans    &trans
+&trans  &trans  &trans     &trans     &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &mkp MB4   &mkp MB5   &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
+                           &mkp LCLK  &trans     &mkp RCLK    &trans  &trans
+                                      &trans     &trans       &trans
             >;
         };
 
@@ -488,12 +482,12 @@
         Sniper {
             display-name = "Sniper";
             bindings = <
-&trans     &trans  &trans     &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &trans  &mkp MB4   &mkp MB5   &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &trans  &trans     &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                              &mkp LCLK  &trans     &mkp RCLK &trans  &trans
-                                         &trans     &trans    &trans
+&trans  &trans  &trans     &trans     &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &mkp MB4   &mkp MB5   &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
+                           &mkp LCLK  &trans     &mkp RCLK    &trans  &trans
+                                      &trans     &trans       &trans
             >;
         };
     };
